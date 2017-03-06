@@ -3,36 +3,31 @@ import {Link} from 'react-router'
 import { Modal} from 'react-bootstrap';
 
 const modalStyle = {
-  position: 'fixed',
-  zIndex: 1040,
-  top: 0, bottom: 0, left: 0, right: 0
+  paddingTop: 30+'%',
 };
 
 const backdropStyle = {
-  ...modalStyle,
   zIndex: 'auto',
+  width:100+'%',
+  height:100+'%',
   backgroundColor: '#000',
   opacity: 0.5
 };
 
-const dialogStyle = function() {
-  // we use some psuedo random coords so nested modals
-  // don't sit right on top of each other.
-  let top = 0
-  let left = 0
-
-  return {
-    position: 'absolute',
-    width: 400,
-    top: top + '%', left: left + '%',
-    transform: `translate(-${top}%, -${left}%)`,
-    border: '1px solid #e5e5e5',
-    backgroundColor: 'white',
-    boxShadow: '0 5px 15px rgba(0,0,0,.5)',
-    padding: 20
-  };
+const emailStyle ={
+  width: 80 + '%',
+  marginBottom: -1.0 +'px',
+  borderBottomLeftRadius: 0,
+  borderBottomRightRadius: 0
 };
 
+const passwordStyle ={
+  width: 80 + '%',
+
+  marginBottom: 20.0 +'px',
+  borderTopLeftRadius: 0,
+  borderTopRightRadius: 0
+};
 
 const ModalExample = React.createClass({
 
@@ -51,12 +46,20 @@ const ModalExample = React.createClass({
           show={this.state.showModal}
           onHide={this.close}
         >
-          <div style={dialogStyle()} >
-            <h4 id='modal-label'>Login!!</h4>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-            <ModalExample/>
-          </div>
-        </Modal>
+        <Modal.Body>
+           <div className="form-group" style={emailStyle}>
+             <input type="email" className="form-control" id="email" placeholder="Email"/>
+           </div>
+           <div className="form-group" style={passwordStyle}>
+             <input type="password" className="form-control" id="pwd" placeholder="password"/>
+           </div>
+           <div className="checkbox">
+             <label><input type="checkbox" value="remember" />Remember me</label>
+           </div>
+          <button className="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        </Modal.Body>
+      </Modal>
+
         </Link>
     );
   },
