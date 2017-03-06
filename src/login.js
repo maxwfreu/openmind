@@ -44,8 +44,7 @@ const ModalExample = React.createClass({
   render() {
 
     return (
-      <div className='modal-example'>
-        <Link onClick={this.open}> Login </Link>
+        <Link onClick={this.open}> Login
         <Modal
           aria-labelledby='modal-label'
           style={modalStyle}
@@ -59,7 +58,7 @@ const ModalExample = React.createClass({
             <ModalExample/>
           </div>
         </Modal>
-      </div>
+        </Link>
     );
   },
 
