@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router'
-
-import { Button, Modal} from 'react-bootstrap';
+import { Modal} from 'react-bootstrap';
 
 const modalStyle = {
   position: 'fixed',
@@ -70,4 +69,5 @@ const ModalExample = React.createClass({
     this.setState({ showModal: true });
   }
 });
- export default ModalExample;
+
+export default ModalExample;
