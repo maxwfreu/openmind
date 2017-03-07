@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
 const modalStyle = {
-  paddingTop: 30+'%',
+  paddingTop: 10+'%',
 };
 
 const backdropStyle = {

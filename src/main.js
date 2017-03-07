@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router'
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
@@ -29,9 +31,9 @@ const Main = React.createClass({
         </div>
 
         <div className="row">
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
+          <Link to="/article"><NewsCard /></Link>
+          <Link to="/article"><NewsCard /></Link>
+          <Link to="/article"><NewsCard /></Link>
         </div>
       </div>
     )

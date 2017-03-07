@@ -5,6 +5,7 @@ import ModalExample from './login'
 import Main from './main'
 import Fund from './fund'
 import Create from './create'
+import ArticleView from './article'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
@@ -57,6 +58,7 @@ render((
     <Route path="/" component={MyNavBar}>
       <Route path="fund" component={Fund} />
       <Route path="create" component={Create}/>
+      <Route path="article" component={ArticleView}/>
     </Route>
   </Router>
 ),   document.getElementById('container'))
