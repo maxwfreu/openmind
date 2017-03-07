@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router'
 import { Modal} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
 const modalStyle = {
   paddingTop: 30+'%',

@@ -1,4 +1,6 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
 const Create = React.createClass({
   render() {

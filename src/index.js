@@ -5,6 +5,8 @@ import ModalExample from './login'
 import Main from './main'
 import Fund from './fund'
 import Create from './create'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
 const MyNavBar = React.createClass({
   render() {
