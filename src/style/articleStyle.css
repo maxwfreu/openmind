@@ -8,6 +8,7 @@
 .icon {
     padding-left: 10px;
     margin: auto 5px;
+    max-width: 50px;
 }
 
 .ovalViewOverlay {
@@ -33,4 +34,11 @@
 .centered {
   padding-left: 10px;
   margin: auto 5px;
+}
+
+.share {
+  float: right;
+  display: inline-flex;
+  margin: auto 5px;
+  margin-top: 10px;
 }

@@ -13,9 +13,16 @@ const PageView = React.createClass({
         <h5> This is a sub title </h5>
         <img src={require('./images/dictator.jpg')} alt="trump" style={{width: 100 + '%'}}/>
         <div className="infoContainer">
-          <div className="ovalViewOverlay inline"><div className="moneyInOvalView"> 7 $</div></div>
-          <i className="material-icons inline icon" style={{fontSize:36 + 'px'}}>people</i>
-          <div className="centered inline"> 508 Readers</div>
+          <div className="ovalViewOverlay"><div className="moneyInOvalView"> 7 $</div></div>
+          <i className="material-icons icon" style={{fontSize:36 + 'px'}}>people</i>
+          <div className="centered"> 508 Readers</div>
+          <i className="material-icons icon" style={{fontSize:34+'px'}}>star_rate</i>
+          <div className="centered"> 10,003 Credits Raised</div>
+        </div>
+        <div className="share">
+          <button type="button" className="btn btn-default btn-sm">
+            <span className="glyphicon glyphicon-share-alt"></span> Share
+          </button>
         </div>
         <p style={{paddingTop: 5 + 'px'}}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
