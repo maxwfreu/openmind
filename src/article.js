@@ -68,11 +68,6 @@ loadArticle: function() {
   $(function() {
   $("#articleContent").load("articleText/wikiLeaks.html");
   });
-  // render the buy button with jQuery
-  // $.get("articleText/wikiLeaks.html", function(txt) {
-  //   $('#articleContent').text(txt)
-  // })
-  //document.getElementById("articleContent").innerHTML='<object type="text/html" data="articleText/wikiLeaks.html" ></object>';
 
 }
 })

@@ -26,3 +26,26 @@
   padding-top: 10%;
   color: white;
 }
+
+
+.p {
+  overflow: auto;
+}
+
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [className*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.is-flex .box {
+  background: none;
+  position: static;
+}
+.is-flex [className*="col-"] {
+  background: #fff;
+}
