@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
+import './style/articleStyle.css'
 
 const PageView = React.createClass({
   render () {
@@ -11,6 +12,11 @@ const PageView = React.createClass({
         <h2> Cool Title </h2>
         <h5> This is a sub title </h5>
         <img src={require('./images/dictator.jpg')} alt="trump" style={{width: 100 + '%'}}/>
+        <div className="infoContainer">
+          <div className="ovalViewOverlay inline"><div className="moneyInOvalView"> 7 $</div></div>
+          <i className="material-icons inline icon" style={{fontSize:36 + 'px'}}>people</i>
+          <div className="centered inline"> 508 Readers</div>
+        </div>
         <p style={{paddingTop: 5 + 'px'}}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

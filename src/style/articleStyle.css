@@ -1,0 +1,36 @@
+.infoContainer {
+  padding-top: 10px;
+  vertical-align: middle;
+  height: 50px;
+  display: inline-flex;
+}
+
+.icon {
+    padding-left: 10px;
+    margin: auto 5px;
+}
+
+.ovalViewOverlay {
+    width: 70px;
+    height: 70%;
+    background: darkgray;
+    border-color: green;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 20px;
+    align-content: center;
+    margin: auto 5px;
+}
+
+.moneyInOvalView {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 11%;
+  padding-top: 6.2%;
+  color: white;
+}
+
+.centered {
+  padding-left: 10px;
+  margin: auto 5px;
+}
