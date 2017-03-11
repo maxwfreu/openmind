@@ -10,7 +10,7 @@ const NewsCard = React.createClass({
     return (
       <Link to="/article">
         <div className="thumbnail">
-          <img src={require(this.props.url)} alt="trump" className="imgCard"/>
+          <img src={require(this.props.url)} alt="trump"/>
           <div className="caption">
             <h4> {this.props.title} </h4>
             <p> {this.props.detail} </p>
@@ -38,19 +38,19 @@ const NewsCardBig = React.createClass({
     )
   }
 })
-var sideData = [{title: "North Korea Tensions Pose Early, and Perilous, Test for Trump", url:'./images/nkorea.jpg', detail: loremIpsum, colSize:"col-md-6"},
-{title:"Dutch Fear Russian Meddling, and U.S. Cash, in Election ", url:'./images/dutch.jpg', detail: loremIpsum, colSize:"col-md-3"},
-{title:" WikiLeaks Releases Trove of Alleged C.I.A. Hacking Documents", url:'./images/wikileaks.jpg', detail:loremIpsum, colSize:"col-md-3"},
-{title: "Trump Abruptly Orders 46 Obama-Era Prosecutors to Resign", url:'./images/justice_master.jpg', detail: loremIpsum, colSize:"col-md-3"},
-{title: "How Healthy Are You? G.O.P. Bill Would Help Employers Find Out", url:'./images/how_healthy.jpg', detail: loremIpsum, colSize: "col-md-6"},
-{title: "Michael Flynn Was Paid to Represent Turkey’s Interests During Trump Campaign", url:'./images/flynn.jpg', detail: loremIpsum, colSize: "col-md-3"}];
+var sideData = [{title: "North Korea Tensions Pose Early, and Perilous, Test for Trump", url:'./images/nkorea.jpg', detail: loremIpsum, colSize:"col-md-6 col-sm-6 col-xs-12"},
+{title:"Dutch Fear Russian Meddling, and U.S. Cash, in Election ", url:'./images/dutch.jpg', detail: loremIpsum, colSize:"col-md-3 col-sm-3 col-xs-6"},
+{title:" WikiLeaks Releases Trove of Alleged C.I.A. Hacking Documents", url:'./images/wikileaks.jpg', detail:loremIpsum, colSize:"col-md-3 col-sm-3 col-xs-6"},
+{title: "Trump Abruptly Orders 46 Obama-Era Prosecutors to Resign", url:'./images/justice_master.jpg', detail: loremIpsum, colSize:"col-md-3 col-sm-4 col-xs-12"},
+{title: "How Healthy Are You? G.O.P. Bill Would Help Employers Find Out", url:'./images/how_healthy.jpg', detail: loremIpsum, colSize: "col-md-6 col-sm-6 col-xs-12"},
+{title: "Michael Flynn Was Paid to Represent Turkey’s Interests During Trump Campaign", url:'./images/flynn.jpg', detail: loremIpsum, colSize: "col-md-3 col-sm-6 col-xs-12"}];
 
 const CreateRow = React.createClass({
   render (){
     var index = this.props.index;
     var items = sideData.map(function(item, i) {
       if(i < index+3 && i >= index){
-        if(item.colSize === "col-md-6"){
+        if(item.colSize ==="col-md-6 col-sm-6 col-xs-12"){
           return(
             <div className={item.colSize} key={i}>
               <NewsCardBig title={item.title} detail={item.detail} url={item.url} />
@@ -73,7 +73,7 @@ const CreateRow = React.createClass({
 const PopulateFeed = React.createClass ({
   render (){
     var rows = sideData.map(function(item, i) {
-      if(i % 3 == 0){
+      if(i % 3 === 0){
         return (
           <div className="row" key={i}>
             <CreateRow index={i}/>
