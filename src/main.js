@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articlecards.css';
+import './style/mainstyle.css'
 
 var loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 const NewsCard = React.createClass({
@@ -88,17 +89,36 @@ const PopulateFeed = React.createClass ({
 const Main = React.createClass({
   render () {
     return (
-      <div className="container">
+      <div>
 
-        <div className="panel panel-default">
-          <div className="panel-body">
-            How it Works
+      <div className="panel-header">
+        <div className="header-container">
+          <div className="gradient-overlay">
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+          </div>
+          <div className="gradient-overlay infoi">
+
           </div>
         </div>
+      </div>
+      <hr style={{marginTop: 10 +'px'}}></hr>
+      <div>
+        <input type="text" placeholder="Search" className="search-bar"/>
+      </div>
+      <hr style={{marginBottom: 10 +'px'}}></hr>
+      <div className="container">
+
 
         <PopulateFeed/>
 
       </div>
+    </div>
     )
   }
 })

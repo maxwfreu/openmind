@@ -8,12 +8,14 @@ import Create from './create'
 import ArticleView from './article'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
+import './style/navstyle.css';
+
 
 const MyNavBar = React.createClass({
   render() {
     return (
       <div>
-        <nav className="navbar navbar-inverse navbar-fixed-top">
+        <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container">
             <div className="navbar-header">
               <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -22,30 +24,35 @@ const MyNavBar = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-                <Link className="navbar-brand" to="/">OpenMind</Link>
+                <Link className="navbar-text" to="/">OpenMind</Link>
             </div>
             <div id="navbar" className="collapse navbar-collapse">
-              <ul className="nav navbar-nav navbar-right">
+              <ul className="nav navbar-nav navbar-left">
                     <li>
                       <Link to="/fund">
-                        <span className="glyphicon glyphicon-star" aria-hidden="true"></span>
-                        Fund
+                        Read and earn
                       </Link>
                     </li>
                     <li>
                       <Link to="/create">
-                        <span className="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
-                         Create
+                         Contribute Points
                       </Link>
                     </li>
-                    <li>
-                    <ModalExample />
-                    </li>
+
+              </ul>
+              <ul className="nav navbar-nav navbar-right">
+                <li>
+                  <Link> About Us </Link>
+                </li>
+                <li>
+                <ModalExample />
+                </li>
               </ul>
             </div>
           </div>
         </nav>
-        <div style={{paddingTop: 80 + 'px'}}>
+
+        <div style={{paddingTop: 50 + 'px'}}>
           {this.props.children || <Main />}
         </div>
       </div>
