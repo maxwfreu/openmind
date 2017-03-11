@@ -1,4 +1,4 @@
-.ovalParentOverlay{
+.ovalParentOverlay.reg{
     background:none;
     width:100%;
     height:100%;
@@ -8,44 +8,63 @@
     padding-left: 5px;
 }
 
-.ovalOverlay {
+.ovalOverlay.reg {
+  position: absolute;
     width: 20%;
     height: 7%;
     margin:0px 0 0 0px;
-    background: darkgray;
+    background: black;
+    opacity: .2;
     border-color: green;
     -moz-border-radius: 100px / 50px;
     -webkit-border-radius: 100px / 50px;
     border-radius: 20px;
 }
 
-.moneyInOval {
+.moneyInOval.reg {
+  position: absolute;
   width: 50%;
   margin: 0 auto;
-  padding-left: 11%;
-  padding-top: 10%;
+  opacity: 1;
+  padding-left: 3px;
+  padding-top: 3px;
   color: white;
+  z-index: 10;
+
+}
+.thumbnail {
+  max-height: 300px;
+}
+
+.customCard {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgContainer {
+  max-height: 180px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 
-.p {
-  overflow: auto;
+.thumbnail {
+  overflow: hidden;
 }
 
-.row.is-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row.is-flex > [className*='col-'] {
-  display: flex;
-  flex-direction: column;
+.thumbnail p {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 
-.is-flex .box {
-  background: none;
-  position: static;
+.row {
+  display: flex; /* equal height of the children */
 }
-.is-flex [className*="col-"] {
-  background: #fff;
+
+.col {
+  flex: 1; /* additionally, equal width */
+
+  padding: 1em;
+  border: solid;
 }
