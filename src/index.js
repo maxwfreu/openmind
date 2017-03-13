@@ -6,6 +6,7 @@ import Main from './main'
 import Fund from './fund'
 import Create from './create'
 import ArticleView from './article'
+import ArticleViewContribute from './article_contribute'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/navstyle.css';
@@ -66,6 +67,7 @@ render((
       <Route path="fund" component={Fund} />
       <Route path="create" component={Create}/>
       <Route path="article" component={ArticleView}/>
+      <Route path="article_contribute" component={ArticleViewContribute}/>
     </Route>
   </Router>
 ),   document.getElementById('container'))

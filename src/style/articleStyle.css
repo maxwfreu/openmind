@@ -45,3 +45,21 @@
 .articleList h4{
   padding-bottom: 10px;
 }
+.activePoints h2{
+  text-decoration: underline;
+  text-decoration-color: gray;
+}
+.infoBox {
+  padding-bottom: 50px;
+  font-family: georgia;
+}
+.readBy h4{
+  display: inline-block;
+}
+.contributedBy h4{
+  display: inline-block;
+}
+.infoText h4{
+  color: gray;
+  font-style: normal;
+}
