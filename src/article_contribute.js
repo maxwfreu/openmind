@@ -15,14 +15,22 @@ const SideInfo = React.createClass({
         </div>
           <div className="row">
           <div className="contributedBy">
-            <img src={require('./images/profile-icon.png')} alt="profiles" style={{width: 30 + '%'}}/>
-            <h4> + 567 Contributed </h4>
+            <div className="circles">
+              <img className="img-circle" src={require('./images/max.jpg')}/>
+              <img className="img-circle img-next" src={require('./images/natasha.jpg')}/>
+              <img className="img-circle img-next" src={require('./images/pippa.jpg')}/>
+            </div>
+                        <h4> + 567 Contributed </h4>
           </div>
         </div>
         <div className="row">
           <div className="readBy">
-            <img src={require('./images/profile-icon-read.png')} alt="profiles" style={{width: 30 + '%'}}/>
-            <h4> + 354 Read </h4>
+            <div className="circles">
+              <img className="img-circle" src={require('./images/pippa.jpg')}/>
+              <img className="img-circle img-next" src={require('./images/natasha.jpg')}/>
+              <img className="img-circle img-next" src={require('./images/max.jpg')}/>
+            </div>
+                        <h4> + 354 Read </h4>
           </div>
         </div>
         <div className="infoText">
