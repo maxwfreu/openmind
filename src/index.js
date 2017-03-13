@@ -11,6 +11,21 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/navstyle.css';
 
+var $ = require ('jquery')
+
+$(document).ready(function () {
+        $('ul.nav > li').click(function (e) {
+            $('ul.nav > li').removeClass('navbar-active');
+            $('ht.title-bar').removeClass('title-active');
+            $(this).addClass('navbar-active');
+
+        });
+        $('hr.title-bar').click(function (e) {
+          console.log("hi");
+          $('ul.nav > li').removeClass('navbar-active');
+            $(this).addClass('title-active');
+        });
+    });
 
 const MyNavBar = React.createClass({
   render() {
@@ -25,7 +40,7 @@ const MyNavBar = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-                <Link className="navbar-text" to="/">OpenMind</Link>
+                <Link className="navbar-text" to="/">OpenMind<hr className="title-bar title-active"/></Link>
             </div>
             <div id="navbar" className="collapse navbar-collapse">
               <ul className="nav navbar-nav navbar-left">
@@ -39,7 +54,6 @@ const MyNavBar = React.createClass({
                          Contribute Points
                       </Link>
                     </li>
-
               </ul>
               <ul className="nav navbar-nav navbar-right">
                 <li>

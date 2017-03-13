@@ -85,12 +85,9 @@ const PopulateFeed = React.createClass ({
     return (<div>{rows}</div>);
   }
 })
-
-const Main = React.createClass({
+export const SeemlessCover = React.createClass({
   render () {
     return (
-      <div>
-
       <div className="panel-header">
         <div className="header-container">
           <div className="gradient-overlay">
@@ -101,12 +98,41 @@ const Main = React.createClass({
               <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
               <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
               <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
+              <img src={require('./images/seemless.jpg')} alt="seemless" className="seemless-cover"/>
           </div>
           <div className="gradient-overlay infoi">
-
+            <div className="info-overlay">
+            <h3>Our Cool Title</h3>
+            <h4>How it works</h4>
+              <div className="row">
+                <div className="col-md-6">
+                  Read: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+                </div>
+                <div className="col-md-6">
+                  Contribute: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    )
+  }
+})
+const Main = React.createClass({
+  render () {
+    return (
+      <div>
+
+      <SeemlessCover/>
       <hr style={{marginTop: 10 +'px'}}></hr>
       <div>
         <input type="text" placeholder="Search" className="search-bar"/>
