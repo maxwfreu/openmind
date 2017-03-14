@@ -16,6 +16,9 @@ const NewsCard = React.createClass({
           <div className="caption">
             <h4> {this.props.title} </h4>
             <p> {this.props.detail} </p>
+            <div className="thumbnail-info">
+              <div className="thumbnail-credits"> <b>35,674</b> </div>
+            </div>
           </div>
       </div>
     </Link>
@@ -34,6 +37,9 @@ const NewsCardBig = React.createClass({
           <div className="caption">
             <h4> {this.props.title} </h4>
             <p> {this.props.detail} </p>
+            <div className="thumbnail-info">
+              <div className="thumbnail-credits"> <b>35,674</b> </div>
+            </div>
           </div>
       </div>
     </Link>
@@ -87,7 +93,7 @@ const PopulateFeed = React.createClass ({
   }
 })
 
-const Create = React.createClass({
+const Contribute = React.createClass({
   render () {
     return (
       <div>
@@ -109,4 +115,4 @@ const Create = React.createClass({
   }
 })
 
-export default Create;
+export default Contribute;
