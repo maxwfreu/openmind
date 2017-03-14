@@ -213,6 +213,9 @@ const PageView = React.createClass({
 
 const ArticleView = React.createClass({
   render () {
+    $(document).ready(function () {
+           window.scrollTo(0,0);
+       });
     articleKey = this.props.params.uniqueKey;
     return (
       <div>
