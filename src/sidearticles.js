@@ -74,7 +74,7 @@ const DoneReading = React.createClass({
   render(){
     return (
       <div className="doneReading" data-target="donePopup">
-                <h3> I'm done reading </h3>
+            <h3> I'm done reading </h3>
       </div>
     )
   }

@@ -32,6 +32,20 @@ var allArticles = [{title: "Health Bill Would Add 24 Million Uninsured but Save 
 
 var articleKey;
 
+function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var div_top = $('#sticky-anchor').offset().top - 26;
+    if (window_top > div_top)
+        $('#sticky-element').addClass('sticky');
+    else
+        $('#sticky-element').removeClass('sticky');
+}
+
+$(function() {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
+
 function getArticleInfo() {
   for(var i =0; i < allArticles.length; i ++){
     if(allArticles[i]['uniqueKey'] === articleKey){
@@ -184,7 +198,8 @@ const PageView = React.createClass({
         <DoneReading />
       </div>
       <div className="col-md-4">
-        <div className="articleList">
+        <div id="sticky-anchor"></div>
+        <div id="sticky-element" className="articleList">
           <SideInfo />
           <SimilarArticles/>
           <hr style={{height:3+'px'}}/>

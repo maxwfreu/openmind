@@ -43,7 +43,6 @@ const DoneReading = React.createClass({
             <br></br>
               <br></br>
          </div>
-          <button className="btn btn-lg btn-primary " type="submit">Done</button>
         </Modal.Body>
       </Modal>
       </div>
