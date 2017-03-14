@@ -33,7 +33,7 @@
 
 }
 .thumbnail {
-  max-height: 300px;
+  max-height: 350px;
 }
 
 .customCard {
@@ -52,7 +52,23 @@
   overflow: hidden;
 }
 
-.thumbnail p {
+
+.thumbnail-info {
+}
+
+.thumbnail-credits {
+  display: inline-block;
+  float:left;
+}
+
+.thumbnail-readicon {
+  display: inline-block;
+  float:right;
+}
+
+.blurb {
+  max-height: 50em;
+  display: block;
   text-overflow: ellipsis;
   overflow: hidden;
 }

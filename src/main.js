@@ -5,13 +5,31 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articlecards.css';
 import './style/mainstyle.css'
 
-var loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+var blurb= "The House Republican plan to replace the Affordable Care Act would increase the number of people without health insurance by 24 million by 2026, while slicing $337 billion off federal budget deficits over that time, the nonpartisan Congressional Budget Office said Monday. Republicans had been bracing for what was almost certain to be a bleak accounting of the legislation’s projected effects. The American Health Care Act, as Republicans call their bill, was already facing widespread criticism from health care providers, some conservatives and a united Democratic Party."
 var allArticles = [{title: "North Korea Tensions Pose Early, and Perilous, Test for Trump", url:'./images/nkorea.jpg', detail: '/articleText/healthbill.txt', colSize:"col-md-6 col-sm-6 col-xs-12", uniqueKey:'1'},
 {title:"Dutch Fear Russian Meddling, and U.S. Cash, in Election ", url:'./images/dutch.jpg', detail: '/articleText/healthbill.txt', colSize:"col-md-3 col-sm-3 col-xs-6", uniqueKey:'2'},
 {title:" WikiLeaks Releases Trove of Alleged C.I.A. Hacking Documents", url:'./images/wikileaks.jpg', detail: '/articleText/healthbill.txt', colSize:"col-md-3 col-sm-3 col-xs-6", uniqueKey:'3'},
 {title: "Trump Abruptly Orders 46 Obama-Era Prosecutors to Resign", url:'./images/justice_master.jpg', detail: '/articleText/healthbill.txt', colSize:"col-md-3 col-sm-4 col-xs-12", uniqueKey:'4'},
 {title: "How Healthy Are You? G.O.P. Bill Would Help Employers Find Out", url:'./images/how_healthy.jpg', detail: '/articleText/healthbill.txt', colSize: "col-md-6 col-sm-6 col-xs-12", uniqueKey:'5'},
 {title: "Michael Flynn Was Paid to Represent Turkey’s Interests During Trump Campaign", url:'./images/flynn.jpg', detail: '/articleText/healthbill.txt', colSize: "col-md-3 col-sm-6 col-xs-12", uniqueKey:'6'}];
+
+function getArticleInfo(articleKey) {
+  for(var i =0; i < allArticles.length; i ++){
+    if(allArticles[i]['uniqueKey'] === articleKey){
+      return allArticles[i];
+    }
+  }
+}
+
+function loadText(key, callback) {
+  var article = getArticleInfo(key);
+    var client = new XMLHttpRequest();
+    client.open('GET', article.detail);
+    client.onreadystatechange = function() {
+      callback(client.responseText);
+    }
+    client.send();
+}
 
 const NewsCard = React.createClass({
   render () {
@@ -22,13 +40,23 @@ const NewsCard = React.createClass({
           <img src={require(this.props.url)} alt="trump"/>
           <div className="caption">
             <h4> {this.props.title} </h4>
-            <p> {this.props.detail} </p>
+            <p className="blurb"> {blurb} </p>
+            <div className="thumbnail-info">
+              <div className="thumbnail-credits"> 35,674 </div>
+              <div className="thumbnail-readicon"> Read</div>
+            </div>
           </div>
       </div>
     </Link>
     )
   }
 })
+
+function getDetail(key){
+  loadText(key, function(response){
+    return response;
+  });
+}
 
 const NewsCardBig = React.createClass({
   render () {
@@ -41,7 +69,11 @@ const NewsCardBig = React.createClass({
           </div>
           <div className="caption">
             <h4> {this.props.title} </h4>
-            <p> {this.props.detail} </p>
+            <p className="blurb big"> {blurb} </p>
+            <div className="thumbnail-info">
+              <div className="thumbnail-credits"> 35,674 </div>
+              <div className="thumbnail-readicon"> Read</div>
+            </div>
           </div>
       </div>
     </Link>
