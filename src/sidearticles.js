@@ -51,19 +51,26 @@ export const SimilarArticles = React.createClass({
       <div className="similarArticles">
         <h2>Similar Articles</h2>
         <div>
-          <h5 className="title-group">title info goes here</h5>
-            <span className="title-group mid">&#124; </span>
-          <p className="title-group"> 7 </p>
+          <h5 className="title-group">
+            White House budget director’s false claims about the Obamacare legislative process
+             <span className="title-group mid">&#124; </span>
+             <p className="title-group"> 7 </p>
+        </h5>
+
         </div>
         <div>
-          <h5 className="title-group">title info goes here</h5>
-            <span className="title-group mid">&#124; </span>
-          <p className="title-group"> 7 </p>
+          <h5 className="title-group">
+            Whoops! Sorry about that frigid camp-out, but ballot placement is a lottery
+             <span className="title-group mid">&#124; </span>
+             <p className="title-group"> 7 </p>
+           </h5>
         </div>
         <div>
-          <h5 className="title-group">title info goes here</h5>
-            <span className="title-group mid">&#124; </span>
-          <p className="title-group"> 7 </p>
+          <h5 className="title-group">
+            President Trump’s war on quotation marks
+             <span className="title-group mid">&#124; </span>
+             <p className="title-group"> 7 </p>
+           </h5>
         </div>
       </div>
     )
@@ -86,19 +93,25 @@ export const ConsiderReading = React.createClass({
       <div className="similarArticles">
         <h2>Consider Reading</h2>
         <div>
-          <h5 className="title-group">title info goes here</h5>
-            <span className="title-group mid">&#124; </span>
-          <p className="title-group"> 7 </p>
+          <h5 className="title-group">
+            Sean Spicer just explained why ‘wire tapping’ is different from wiretapping
+             <span className="title-group mid">&#124; </span>
+             <p className="title-group"> 7 </p>
+           </h5>
         </div>
         <div>
-          <h5 className="title-group">title info goes here</h5>
-            <span className="title-group mid">&#124; </span>
-          <p className="title-group"> 7 </p>
+          <h5 className="title-group">
+            Democrats hope to use Obamacare rewrite to turn activism into change
+             <span className="title-group mid">&#124; </span>
+             <p className="title-group"> 7 </p>
+           </h5>
         </div>
         <div>
-          <h5 className="title-group">title info goes here</h5>
-            <span className="title-group mid">&#124; </span>
-          <p className="title-group"> 7 </p>
+          <h5 className="title-group">
+              Affordable Care Act revision would reduce insured numbers by 24 million, CBO projects
+             <span className="title-group mid">&#124; </span>
+             <p className="title-group"> 7 </p>
+           </h5>
         </div>
       </div>
     )
