@@ -1,6 +1,6 @@
 
 .panel-header {
-  max-height: 180px;
+  max-height: 220px;
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 0px;
@@ -8,7 +8,7 @@
 
 .seemless-cover{
   width: 200px;
-  height: 200px;
+  height: 220px;
 }
 
 .header-container {
@@ -70,4 +70,15 @@ hr {
   padding-right: 20px;
   color: white;
   white-space: normal;
+}
+.headerDropdown {
+    display: inline-block;
+}
+
+.howItWorks h4{
+  display: inline-block;
+}
+.panel-header h4 {
+  padding-right: 10px;
+  display: inline-block;
 }

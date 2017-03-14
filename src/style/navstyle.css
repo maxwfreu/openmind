@@ -4,7 +4,7 @@
     left: 0;
     text-align: center;
     margin: auto;
-    padding-top: 13px;
+    padding-top: 7px;
     font-size: 20px;
 }
 
@@ -13,7 +13,32 @@
   border-color: deepskyblue;
 }
 
+.read-active {
+  border-bottom: 3px solid;
+  border-color: #32BEC8;
+}
+
+
+.contribute-active {
+  border-bottom: 3px solid;
+  border-color: #32BEC8;
+}
+
 .title-active {
   border-bottom: 2px solid;
-  border-color: deepskyblue;
+  border-color: #32BEC8;
+}
+
+/*.link-text {
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+}*/
+
+.navbar-nav li{
+  padding-bottom: 3px;
+}
+
+.nav > li > a {
+    padding-bottom:0;
+    margin-bottom:0;
 }

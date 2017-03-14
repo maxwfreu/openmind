@@ -142,7 +142,8 @@ export const SeemlessCover = React.createClass({
           <div className="gradient-overlay infoi">
             <div className="info-overlay">
             <h3>Our Cool Title</h3>
-            <h4>How it works</h4>
+            <h4 className="howItWorks"> How it works</h4>
+            <span className="headerDropdown glyphicon glyphicon-menu-down" aria-hidden="true" ></span>
               <div className="row">
                 <div className="col-md-6">
                   Read: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet

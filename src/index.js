@@ -13,19 +13,40 @@ import './style/navstyle.css';
 
 var $ = require ('jquery')
 
+// $(document).ready(function () {
+//         $('ul.nav > li').click(function (e) {
+//             $('ul.nav > li').removeClass('navbar-active');
+//             $('ht.title-bar').removeClass('title-active');
+//             $(this).addClass('navbar-active');
+//
+//         });
+//         $('hr.title-bar').click(function (e) {
+//           console.log("hi");
+//           $('ul.nav > li').removeClass('navbar-active');
+//             $(this).addClass('title-active');
+//         });
+//     });
+
 $(document).ready(function () {
-        $('ul.nav > li').click(function (e) {
-            $('ul.nav > li').removeClass('navbar-active');
-            $('ht.title-bar').removeClass('title-active');
-            $(this).addClass('navbar-active');
+        $('ul.read > li').click(function (e) {
+                $('ul.contribute > li').removeClass('contribute-active');
+                $('ht.title-bar').removeClass('title-active');
+                $(this).addClass('read-active');
 
         });
-        $('hr.title-bar').click(function (e) {
-          console.log("hi");
-          $('ul.nav > li').removeClass('navbar-active');
-            $(this).addClass('title-active');
+        $('ul.contribute > li').click(function (e) {
+                $('ul.read > li').removeClass('read-active');
+                $('ht.title-bar').removeClass('title-active');
+                $(this).addClass('contribute-active');
+
         });
-    });
+            $('hr.title-bar').click(function (e) {
+              console.log("hi");
+              $('ul.nav > li').removeClass('read-active');
+              $('ul.nav > li').removeClass('contribute-active');
+                $(this).addClass('title-active');
+            });
+        });
 
 const MyNavBar = React.createClass({
   render() {
@@ -40,19 +61,23 @@ const MyNavBar = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-                <Link className="navbar-text" to="/">OpenMind
+              <div className="container center-logo">
+                <Link className="navbar-text" to="/">
+                  <img className="center-logo" width="120" src={require('./images/logo-2.png')}/>
                 </Link>
-
+              </div>
             </div>
             <div id="navbar" className="collapse navbar-collapse">
-              <ul className="nav navbar-nav navbar-left">
-                    <li>
-                      <Link to="/fund">
+              <ul className="read nav navbar-nav navbar-left">
+                    <li className="read">
+                      <Link className="link-text" to="/fund">
                         Read and earn
                       </Link>
                     </li>
-                    <li>
-                      <Link to="/create">
+                </ul>
+                <ul className="contribute nav navbar-nav navbar-left">
+                    <li className="contribute">
+                      <Link className="link-text" to="/create">
                          Contribute Points
                       </Link>
                     </li>
