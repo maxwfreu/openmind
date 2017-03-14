@@ -16,9 +16,9 @@ const SideInfo = React.createClass({
           <div className="row">
           <div className="contributedBy">
             <div className="circles">
-              <img className="img-circle" src={require('./images/max.jpg')}/>
-              <img className="img-circle img-next" src={require('./images/natasha.jpg')}/>
-              <img className="img-circle img-next" src={require('./images/pippa.jpg')}/>
+              <img className="img-circle" src={require('./images/max.jpg')} alt="max"/>
+              <img className="img-circle img-next" src={require('./images/natasha.jpg')} alt="natasha"/>
+              <img className="img-circle img-next" src={require('./images/pippa.jpg')} alt="pippa"/>
             </div>
                         <h4> + 567 Contributed </h4>
           </div>
@@ -26,9 +26,9 @@ const SideInfo = React.createClass({
         <div className="row">
           <div className="readBy">
             <div className="circles">
-              <img className="img-circle" src={require('./images/pippa.jpg')}/>
-              <img className="img-circle img-next" src={require('./images/natasha.jpg')}/>
-              <img className="img-circle img-next" src={require('./images/max.jpg')}/>
+              <img className="img-circle" src={require('./images/pippa.jpg')} alt="pippa"/>
+              <img className="img-circle img-next" src={require('./images/natasha.jpg')}  alt="natasha"/>
+              <img className="img-circle img-next" src={require('./images/max.jpg')} alt="max"/>
             </div>
                         <h4> + 354 Read </h4>
           </div>

@@ -82,7 +82,7 @@ render((
     <Route path="/" component={MyNavBar}>
       <Route path="fund" component={Fund} />
       <Route path="create" component={Create}/>
-      <Route path="article" component={ArticleView}/>
+      <Route path="article/:uniqueKey" component={ArticleView}/>
       <Route path="article_contribute" component={ArticleViewContribute}/>
     </Route>
   </Router>
