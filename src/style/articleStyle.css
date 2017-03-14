@@ -122,3 +122,16 @@
     position: fixed;
     top: 0;
 }
+.similarArticles h2{
+  font-family: Roboto;
+}
+
+.similarArticles h5{
+  font-family: georgia;
+}
+.articleContent {
+  font-family: georgia;
+}
+.mainArticle-text {
+    font-family: georgia;
+}

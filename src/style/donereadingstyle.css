@@ -1,35 +1,21 @@
-.modalStyle  {
-  paddingTop: 10+'%';
-}
-
-.backdropStyle  {
-  zIndex: 'auto';
-  width:100+'%';
-  height:100+'%';
-  backgroundColor: '#000';
-  opacity: 0.5;
-}
-
-.emailStyle {
-  width: 80 + '%';
-  marginBottom: -1.0 +'px';
-  borderBottomLeftRadius: 0;
-  borderBottomRightRadius: 0;
-}
-
-.passwordStyle {
-  width: 80 + '%';
-
-  marginBottom: 20.0 +'px';
-  borderTopLeftRadius: 0;
-  borderTopRightRadius: 0;
-}
-
-.donepopup h4 {
+.donepopup {
   font-family: georgia;
-  text-decoration: underline;
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
   color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 30px;
+}
+
+.congrats {
+    font-family: georgia;
+}
+.ok-button {
+  color: black;
+  background-color: white;
+  border-color: #FFDF80;
+  border-radius: 10px;
+
 }

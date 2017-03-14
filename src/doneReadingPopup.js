@@ -29,7 +29,7 @@ const DoneReading = React.createClass({
     return (
         <Link onClick={this.open}>
           <div className="donepopup">
-          <h4 className="donepopup"> I'm Done Reading </h4>
+          <button className="btn btn-outline btn-lg donepopup"> I'm Done Reading </button>
         <Modal
           aria-labelledby='modal-label'
           style={modalStyle}
@@ -39,7 +39,9 @@ const DoneReading = React.createClass({
         >
         <Modal.Body>
           <div className="congrats">
-            <h2> Awesome! It seems like you have read the article; we will put your earned credits in to your account. </h2>
+            <h2> Congrats!</h2>
+            <h4>It seems like you have read the article; we will put your earned credits in to your account. </h4>
+            <button className="btn btn-sm btn-outline ok-button pull-right">OK</button> 
             <br></br>
               <br></br>
          </div>

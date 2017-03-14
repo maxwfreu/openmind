@@ -177,7 +177,7 @@ export const MainArticle = React.createClass({
   render(){
     var article = getArticleInfo();
     return (
-      <div>
+      <div className="mainArticle-text">
         <h2> {article.title} </h2>
         <h5> By SCOTT SHANE, MATTHEW ROSENBERG and ANDREW W. LEHREN &middot; MARCH 7, 2017 </h5>
         <img src={require(article.url)} alt="trump" style={{width: 100 + '%'}}/>

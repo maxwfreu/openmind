@@ -54,7 +54,7 @@ export const SimilarArticles = React.createClass({
           <h5 className="title-group">
             White House budget director’s false claims about the Obamacare legislative process
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> 7 </p>
+             <p className="title-group"> +40 </p>
         </h5>
 
         </div>
@@ -62,14 +62,14 @@ export const SimilarArticles = React.createClass({
           <h5 className="title-group">
             Whoops! Sorry about that frigid camp-out, but ballot placement is a lottery
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> 7 </p>
+             <p className="title-group"> +50 </p>
            </h5>
         </div>
         <div>
           <h5 className="title-group">
             President Trump’s war on quotation marks
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> 7 </p>
+             <p className="title-group"> +40 </p>
            </h5>
         </div>
       </div>
@@ -96,21 +96,21 @@ export const ConsiderReading = React.createClass({
           <h5 className="title-group">
             Sean Spicer just explained why ‘wire tapping’ is different from wiretapping
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> 7 </p>
+             <p className="title-group"> +30 </p>
            </h5>
         </div>
         <div>
           <h5 className="title-group">
             Democrats hope to use Obamacare rewrite to turn activism into change
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> 7 </p>
+             <p className="title-group"> +40 </p>
            </h5>
         </div>
         <div>
           <h5 className="title-group">
               Affordable Care Act revision would reduce insured numbers by 24 million, CBO projects
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> 7 </p>
+             <p className="title-group"> +60 </p>
            </h5>
         </div>
       </div>
