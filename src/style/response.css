@@ -1,6 +1,7 @@
 .response-tab {
   display: inline-block;
   width: 33.3333%;
+  text-align: center;
 }
 
 .tab-container {
@@ -20,8 +21,10 @@
   height: .25rem;
   width: 33.3333333%;
   margin: 0;
-  background: deepskyblue;
-  border: none;
+  background: -webkit-linear-gradient(-90deg, white, deepskyblue, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, white, deepskyblue, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, white, deepskyblue, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, white, deepskyblue, white); /* Standard syntax */  border: none;
   transition: .3s ease-in-out;
 }
 

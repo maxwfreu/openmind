@@ -1,39 +1,41 @@
-.ovalParentOverlay.reg{
+.ovalParentOverlay{
     background:none;
-    width:100%;
-    height:100%;
+    width:30px;
+    height:30px;
     overflow:hidden;
     position: absolute;
-    padding-top: 5px;
-    padding-left: 5px;
+    float: right;
+    display: inline-block;
 }
 
-.ovalOverlay.reg {
-  position: absolute;
-    width: 20%;
-    height: 7%;
-    margin:0px 0 0 0px;
-    background: black;
-    opacity: .2;
-    border-color: green;
-    -moz-border-radius: 100px / 50px;
-    -webkit-border-radius: 100px / 50px;
-    border-radius: 20px;
+.ovalOverlay {
+  display: inline-block;
+
+  float: right;
+  width: 45px;
+  height: 20px;
+  margin:0px 0 0 0px;
+  background: gold;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: -5px;
 }
 
-.moneyInOval.reg {
+.moneyInOval {
   position: absolute;
-  width: 50%;
   margin: 0 auto;
   opacity: 1;
-  padding-left: 3px;
-  padding-top: 3px;
-  color: white;
+  color: black;
   z-index: 10;
-
+  padding-left: 7px;
+  padding-top: 1px;
 }
 .thumbnail {
-  max-height: 350px;
+  height: 350px;
 }
 
 .customCard {
@@ -53,22 +55,39 @@
 }
 
 
-.thumbnail-info {
-}
 
 .thumbnail-credits {
   display: inline-block;
   float:left;
+  font-size: 18px;
+  font-style: bold;
+}
+
+.thumbnail-credits b {
+  border-bottom: 1px solid;
+  border-color: yellow;
 }
 
 .thumbnail-readicon {
   display: inline-block;
   float:right;
+  font-size: 18px;
 }
 
-.blurb {
-  max-height: 50em;
-  display: block;
-  text-overflow: ellipsis;
-  overflow: hidden;
+
+.thumbnail-info {
+  position: absolute;
+  bottom: 18px;
+  background-color: white;
+  margin-bottom: 3px;
+  width: 80%;
+  height: 30px;
+}
+
+.thumbnail-info.big {
+  position: absolute;
+  bottom: 18px;
+  background-color: white;
+  margin-bottom: 3px;
+  width: 90%;
 }

@@ -3,10 +3,9 @@ import { render } from 'react-dom'
 import { Router, Route, Link, browserHistory } from 'react-router'
 import ModalExample from './login'
 import Main from './main'
-import Fund from './fund'
-import Create from './create'
+import Earn from './earn'
+import Contribute from './contribute'
 import ArticleView from './article'
-import ArticleViewContribute from './article_contribute'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/navstyle.css';
@@ -70,14 +69,14 @@ const MyNavBar = React.createClass({
             <div id="navbar" className="collapse navbar-collapse">
               <ul className="read nav navbar-nav navbar-left">
                     <li className="read">
-                      <Link className="link-text" to="/fund">
+                      <Link className="link-text" to="/earn">
                         Read and earn
                       </Link>
                     </li>
                 </ul>
                 <ul className="contribute nav navbar-nav navbar-left">
                     <li className="contribute">
-                      <Link className="link-text" to="/create">
+                      <Link className="link-text" to="/contribute">
                          Contribute Points
                       </Link>
                     </li>
@@ -105,10 +104,9 @@ const MyNavBar = React.createClass({
 render((
   <Router history={browserHistory}>
     <Route path="/" component={MyNavBar}>
-      <Route path="fund" component={Fund} />
-      <Route path="create" component={Create}/>
+      <Route path="earn" component={Earn} />
+      <Route path="contribute" component={Contribute}/>
       <Route path="article/:uniqueKey" component={ArticleView}/>
-      <Route path="article_contribute" component={ArticleViewContribute}/>
     </Route>
   </Router>
 ),   document.getElementById('container'))
