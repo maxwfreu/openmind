@@ -162,10 +162,10 @@ export const SeemlessCover = React.createClass({
             <span className="headerDropdown glyphicon glyphicon-menu-down" aria-hidden="true" ></span>
               <div className="row">
                 <div className="col-md-6">
-                  Read: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+                  Read: Here you can find articles that you aren't usually exposed to based on your social media trends. Read articles from a wide range of opinions to burst our of your echo chamber! Reading this articles gains you credits that you can in turn use to promote articles you think are worth sharing
                 </div>
                 <div className="col-md-6">
-                  Contribute: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+                  Contribute: Using credits you have earned from reading articles, you can promote articles that you think other people need to be reading. Post a link to an article or help promote one that has already been posted!
                 </div>
               </div>
             </div>

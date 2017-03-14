@@ -220,7 +220,7 @@ const ArticleView = React.createClass({
     return (
       <div>
       <SeemlessCover/>
-        <div className="container">
+        <div className="container-fluid">
           <PageView/>
         </div>
 
