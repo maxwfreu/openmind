@@ -58,20 +58,41 @@
 
 .thumbnail-credits {
   display: inline-block;
-  float:left;
+  float:right;
   font-size: 18px;
   font-style: bold;
 }
 
-.thumbnail-credits b {
-  border-bottom: 1px solid;
-  border-color: yellow;
-}
-
 .thumbnail-readicon {
   display: inline-block;
-  float:right;
+  float:left;
   font-size: 18px;
+}
+
+.can-read {
+  border: 2px solid;
+  border-radius: 25px;
+  border-color: red;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.can-not-read {
+  border: 2px solid;
+  border-radius: 25px;
+  border-color: deepskyblue;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.thumbnail-credits.read {
+  border-bottom: 2px solid;
+  border-color: red;
+}
+
+.thumbnail-credits.contribute {
+  border-bottom: 2px solid;
+  border-color: deepskyblue;
 }
 
 
