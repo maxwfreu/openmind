@@ -4,6 +4,15 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articleStyle.css'
 import './style/response.css'
 
+function generateContent(canearn){
+  if(canearn === true){
+    return(<div><div className="ovalOverlay">
+      <div className="moneyInOval"><b>+ 50</b></div>
+    </div>
+    <div className="thumbnail-readicon"> <b>Read</b> </div></div>)
+  } else return;
+}
+
 export const SideInfo = React.createClass({
   render () {
     return (
@@ -11,10 +20,7 @@ export const SideInfo = React.createClass({
         <div className="activePoints">
           <h2 className="active-detail"> 367,063 </h2>
           <div className="active-detail read">
-            <div className="ovalOverlay">
-              <div className="moneyInOval"><b>+ 50</b></div>
-            </div>
-            <div className="thumbnail-readicon"> <b>Read</b> </div>
+            {generateContent(this.props.canEarn)}
           </div>
         </div>
           <div className="row">
