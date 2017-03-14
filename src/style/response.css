@@ -3,6 +3,9 @@
   width: 33.3333%;
   text-align: center;
 }
+.response-tab h3{
+  font-family: roboto-bold;
+}
 
 .tab-container {
   padding-left: 0px;
