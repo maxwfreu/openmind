@@ -40,7 +40,9 @@ const MyNavBar = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-                <Link className="navbar-text" to="/">OpenMind<hr className="title-bar title-active"/></Link>
+                <Link className="navbar-text" to="/">OpenMind
+                </Link>
+
             </div>
             <div id="navbar" className="collapse navbar-collapse">
               <ul className="nav navbar-nav navbar-left">
