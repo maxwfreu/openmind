@@ -159,6 +159,8 @@ const ResponseTabs = React.createClass({
 
         <TabPanel>
           <div id="articleContent" style={{paddingTop: 5 + 'px'}}></div>
+            <DoneReading canEarn={article.canEarn}/>
+
         </TabPanel>
         <TabPanel>
           <WriteResponse/>
@@ -196,7 +198,6 @@ const PageView = React.createClass({
       <div className="row">
       <div className="col-md-8">
         <MainArticle />
-        <DoneReading />
       </div>
       <div className="col-md-4">
         <div id="sticky-anchor"></div>
