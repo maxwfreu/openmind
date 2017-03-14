@@ -4,7 +4,9 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articleStyle.css'
 import './style/response.css'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Modal } from 'react-bootstrap'
 import { SeemlessCover } from './main'
+import DoneReading from './doneReadingPopup'
 
 var $ = require ('jquery')
 
@@ -189,11 +191,11 @@ const PageView = React.createClass({
       <div className="row">
       <div className="col-md-8">
         <MainArticle />
+        <DoneReading />
       </div>
       <div className="col-md-4">
         <div className="articleList">
           <SideArticle />
-
         </div>
       </div>
     </div>
@@ -216,4 +218,5 @@ const ArticleView = React.createClass({
     )
   }
 })
+
 export default ArticleView;

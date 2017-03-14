@@ -53,6 +53,16 @@ const SimilarArticles = React.createClass({
   }
 })
 
+const DoneReading = React.createClass({
+  render(){
+    return (
+      <div className="doneReading" data-target="donePopup">
+                <h3> I'm done reading </h3>
+      </div>
+    )
+  }
+})
+
 const ConsiderReading = React.createClass({
   render(){
     return (
@@ -73,6 +83,7 @@ const PageView = React.createClass({
       <div className="row">
       <div className="col-md-8">
         <MainArticle />
+        <DoneReading />
       </div>
       <div className="col-md-4">
         <SideInfo />

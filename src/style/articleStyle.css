@@ -63,7 +63,12 @@
   color: gray;
   font-style: normal;
 }
-
+.doneReading {
+  text-decoration: underline;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
 
 .article-caption{
   padding-top: 10px;
