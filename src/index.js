@@ -6,7 +6,6 @@ import Main from './main'
 import Earn from './earn'
 import Contribute from './contribute'
 import ArticleView from './article'
-import ArticleViewContribute from './article_contribute'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/navstyle.css';
@@ -108,7 +107,6 @@ render((
       <Route path="earn" component={Earn} />
       <Route path="contribute" component={Contribute}/>
       <Route path="article/:uniqueKey" component={ArticleView}/>
-      <Route path="article_contribute" component={ArticleViewContribute}/>
     </Route>
   </Router>
 ),   document.getElementById('container'))

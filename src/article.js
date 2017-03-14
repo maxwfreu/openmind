@@ -5,6 +5,7 @@ import './style/articleStyle.css'
 import './style/response.css'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { SeemlessCover } from './main'
+import {SideInfo, SimilarArticles, ConsiderReading} from './sidearticles'
 
 var $ = require ('jquery')
 
@@ -149,24 +150,6 @@ const ResponseTabs = React.createClass({
 
 //NOTE this will only be one thumbnail
 
-
-
-export const SideArticle = React.createClass({
-  render (){
-    var items = sideData.map(function(item, i) {
-         return(
-           <div className="thumbnail" key={i}>
-             <img src={require(item.url)} alt="trump"/>
-             <div className="caption">
-               <h5> {item.title} </h5>
-             </div>
-           </div>
-         )
-    });
-    return (<div>{items}</div>);
-  }
-})
-
 export const MainArticle = React.createClass({
   render(){
     var article = getArticleInfo();
@@ -192,7 +175,10 @@ const PageView = React.createClass({
       </div>
       <div className="col-md-4">
         <div className="articleList">
-          <SideArticle />
+          <SideInfo />
+          <SimilarArticles/>
+          <hr style={{height:3+'px'}}/>
+          <ConsiderReading/>
 
         </div>
       </div>

@@ -2,16 +2,20 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articleStyle.css'
-import {MainArticle, SideArticle} from './article';
+import './style/response.css'
 
-var $ = require ('jquery')
-
-const SideInfo = React.createClass({
+export const SideInfo = React.createClass({
   render () {
     return (
       <div className="infoBox">
         <div className="activePoints">
-          <h2> 367,063 </h2>
+          <h2 className="active-detail"> 367,063 </h2>
+          <div className="active-detail read">
+            <div className="ovalOverlay">
+              <div className="moneyInOval"><b>+ 50</b></div>
+            </div>
+            <div className="thumbnail-readicon"> <b>Read</b> </div>
+          </div>
         </div>
           <div className="row">
           <div className="contributedBy">
@@ -41,67 +45,52 @@ const SideInfo = React.createClass({
   }
 })
 
-const SimilarArticles = React.createClass({
+export const SimilarArticles = React.createClass({
   render(){
     return (
       <div className="similarArticles">
         <h2>Similar Articles</h2>
-        <SideArticle />
-        <hr></hr>
+        <div>
+          <h5 className="title-group">title info goes here</h5>
+            <span className="title-group mid">&#124; </span>
+          <p className="title-group"> 7 </p>
+        </div>
+        <div>
+          <h5 className="title-group">title info goes here</h5>
+            <span className="title-group mid">&#124; </span>
+          <p className="title-group"> 7 </p>
+        </div>
+        <div>
+          <h5 className="title-group">title info goes here</h5>
+            <span className="title-group mid">&#124; </span>
+          <p className="title-group"> 7 </p>
+        </div>
       </div>
     )
   }
 })
 
-const ConsiderReading = React.createClass({
+export const ConsiderReading = React.createClass({
   render(){
     return (
       <div className="considerReading">
         <h2>Consider Reading</h2>
-        <SideArticle />
-      </div>
-    )
-  }
-})
-
-const PageView = React.createClass({
-  componentDidMount: function() {
-    this.loadArticle();
-  },
-  render () {
-    return (
-      <div className="row">
-      <div className="col-md-8">
-        <MainArticle />
-      </div>
-      <div className="col-md-4">
-        <SideInfo />
-        <div className="articleList">
-          <SimilarArticles />
+        <div>
+          <h5 className="title-group">title info goes here</h5>
+            <span className="title-group mid">&#124; </span>
+          <p className="title-group"> 7 </p>
         </div>
-        <div className="consider">
-          <ConsiderReading/>
-      </div>
-      </div>
-    </div>
-  )
-},
-loadArticle: function() {
-  $(function() {
-  $("#articleContent").load("articleText/wikiLeaks.html");
-  });
-
-}
-})
-
-const ArticleViewContribute = React.createClass({
-  render () {
-    return (
-      <div className="container">
-        <PageView/>
+        <div>
+          <h5 className="title-group">title info goes here</h5>
+            <span className="title-group mid">&#124; </span>
+          <p className="title-group"> 7 </p>
+        </div>
+        <div>
+          <h5 className="title-group">title info goes here</h5>
+            <span className="title-group mid">&#124; </span>
+          <p className="title-group"> 7 </p>
+        </div>
       </div>
     )
   }
 })
-
-export default ArticleViewContribute;
