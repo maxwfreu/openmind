@@ -86,7 +86,14 @@ const MyNavBar = React.createClass({
                   <Link> About Us </Link>
                 </li>
                 <li>
-                <ModalExample />
+                  <Link> My Account </Link>
+                </li>
+                <li className="credit-container">
+                  <div>
+                    <div className="ovalOverlay">
+                      <div className="moneyInOval"><b>350</b></div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>

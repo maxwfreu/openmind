@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articlecards.css';
 import './style/mainstyle.css'
-import { SeemlessCover } from './main'
+import { CoverRepeat } from './main'
 
 
 var blurb= "The House Republican plan to replace the Affordable Care Act would increase the number of people without health insurance by 24 million by 2026, while slicing $337 billion off federal budget deficits over that time, the nonpartisan Congressional Budget Office said Monday. Republicans had been bracing for what was almost certain to be a bleak accounting of the legislation’s projected effects. The American Health Care Act, as Republicans call their bill, was already facing widespread criticism from health care providers, some conservatives and a united Democratic Party."
@@ -128,12 +128,31 @@ const PopulateFeed = React.createClass ({
   }
 })
 
+export const SeemlessCoverEarn = React.createClass({
+  render () {
+    return (
+      <div className="panel-header small">
+        <div className="header-container">
+          <div className="gradient-overlay">
+              <CoverRepeat/>
+          </div>
+          <div className="gradient-overlay infoi">
+            <div className="info-overlay">
+            <h3>Earn Credits</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+})
+
 const Earn = React.createClass({
   render () {
     return (
       <div>
 
-      <SeemlessCover/>
+      <SeemlessCoverEarn/>
       <hr style={{marginTop: 10 +'px'}}></hr>
       <div>
         <input type="text" placeholder="Search" className="search-bar"/>

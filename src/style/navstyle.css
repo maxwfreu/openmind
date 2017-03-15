@@ -42,3 +42,39 @@
     padding-bottom:0;
     margin-bottom:0;
 }
+
+
+.ovalParentOverlay{
+    background:none;
+    width:30px;
+    height:30px;
+    overflow:hidden;
+    position: absolute;
+    float: right;
+    display: inline-block;
+}
+
+.ovalOverlay {
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  background: gold;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.moneyInOval {
+  position: absolute;
+  margin: 0 auto;
+  opacity: 1;
+  color: black;
+  z-index: 10;
+  padding-left: 10px;
+  padding-top: 1px;
+}
+
+.credit-container{
+  padding-top: 13px;
+}
