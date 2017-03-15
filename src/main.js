@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articlecards.css';
 import './style/mainstyle.css'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import {PopulateEarnFeed} from './earn'
+import {PopulateContributeFeed} from './contribute'
+
 
 var blurb= "The House Republican plan to replace the Affordable Care Act would increase the number of people without health insurance by 24 million by 2026, while slicing $337 billion off federal budget deficits over that time, the nonpartisan Congressional Budget Office said Monday. Republicans had been bracing for what was almost certain to be a bleak accounting of the legislation’s projected effects. The American Health Care Act, as Republicans call their bill, was already facing widespread criticism from health care providers, some conservatives and a united Democratic Party."
 var allArticles = [{title: "Why those in media bubble never got Trump's rise – and still don't", url:'./images/trumprise.jpg',author:'Howard Kurtz', detail: '/articleText/trumprise.txt', colSize: "col-md-6 col-sm-6 col-xs-12", uniqueKey:'5', canEarn:true, blurb: "This just in: There really is a liberal media elite that dwell in an isolated bubble. And that, in turn, causes a disconnect from reality, as we saw during the 2016 campaign and which continues during the opening weeks of the Trump presidency."},
@@ -197,11 +200,9 @@ const CategoryTabs = React.createClass({
 
           {}
 
-          <Tab className="article-tab one"><h4>Top Picks For You</h4></Tab>
-          <Tab className="article-tab two"><h4>Politics</h4></Tab>
-          <Tab className="article-tab three"><h4>Health Care</h4></Tab>
-          <Tab className="article-tab four"><h4>Immigration</h4></Tab>
-
+          <Tab className="article-tab one"><h4>All</h4></Tab>
+          <Tab className="article-tab two"><h4>Read Articles</h4></Tab>
+          <Tab className="article-tab three"><h4>Promote Articles</h4></Tab>
           <hr className="article-underline" />
 
         </TabList>
@@ -209,12 +210,19 @@ const CategoryTabs = React.createClass({
         {}
 
         <TabPanel>
+          <div className="container-fluid">
+            <PopulateFeed/>
+          </div>
         </TabPanel>
         <TabPanel>
+          <div className="container-fluid ">
+            <PopulateEarnFeed/>
+          </div>
         </TabPanel>
         <TabPanel>
-        </TabPanel>
-        <TabPanel>
+          <div className="container-fluid">
+            <PopulateContributeFeed/>
+          </div>
         </TabPanel>
       </Tabs>
     )
@@ -227,26 +235,13 @@ const Main = React.createClass({
       <div>
 
       <SeemlessCover/>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-8">
-            <CategoryTabs/>
-          </div>
-          <div className="col-md-4">
-            <div className="buttonContainer">
-              <button type="button" className="btn btn-default btn-mine raised"><b>+ Add An Article</b></button>
-            </div>
-          </div>
-        </div>
+      <div className="container-fluid offset">
+          <CategoryTabs className="category-tab-shift"/>
       </div>
-      <hr style={{marginTop: 10 +'px'}}></hr>
-      <div>
-        <input type="text" placeholder="Search" className="search-bar"/>
+      <div className="filter">
+        <p>Filter: <b>Top picks for you &#x25BC;</b></p>
       </div>
-      <hr style={{marginBottom: 10 +'px'}}></hr>
-      <div className="container">
-        <PopulateFeed/>
-      </div>
+
     </div>
     )
   }

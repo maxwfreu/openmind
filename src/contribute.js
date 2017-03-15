@@ -88,7 +88,7 @@ const CreateRow = React.createClass({
   }
 })
 
-const PopulateFeed = React.createClass ({
+export const PopulateContributeFeed = React.createClass ({
   render (){
     var rows = allArticles.map(function(item, i) {
       if(i % 3 === 0){
@@ -136,7 +136,7 @@ const Contribute = React.createClass({
       <div className="container">
 
 
-        <PopulateFeed/>
+        <PopulateContributeFeed/>
 
       </div>
     </div>
