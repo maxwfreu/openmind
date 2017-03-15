@@ -202,10 +202,9 @@ const CategoryTabs = React.createClass({
 
           {}
 
-          <Tab className="article-tab one"><h4>Mixed</h4></Tab>
+          <Tab className="article-tab one"><h4>All</h4></Tab>
           <Tab className="article-tab two"><h4>Read Articles</h4></Tab>
           <Tab className="article-tab three"><h4>Promote Articles</h4></Tab>
-
           <hr className="article-underline" />
 
         </TabList>
@@ -218,7 +217,7 @@ const CategoryTabs = React.createClass({
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="container-fluid">
+          <div className="container-fluid ">
             <PopulateEarnFeed/>
           </div>
         </TabPanel>
@@ -238,9 +237,13 @@ const Main = React.createClass({
       <div>
 
       <SeemlessCover/>
-      <div className="container-fluid">
-          <CategoryTabs/>
+      <div className="container-fluid offset">
+          <CategoryTabs className="category-tab-shift"/>
       </div>
+      <div className="filter">
+        <p>Filter: <b>Top picks for you &#x25BC;</b></p>
+      </div>
+
     </div>
     )
   }

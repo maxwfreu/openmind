@@ -73,7 +73,7 @@ const WriteResponse = React.createClass({
   render() {
     return (
       <div>
-        <h4>Write a Repsonse</h4>
+        <h4>Write a Response</h4>
         <div className="textarea-container">
           <textarea rows="4" cols="50" placeholder="What is your opinion?"></textarea>
           <button className="submit-button btn btn-primary">Submit</button>
