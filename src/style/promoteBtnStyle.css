@@ -1,0 +1,25 @@
+.donepopup {
+  font-family: georgia;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 30px;
+}
+
+.congrats {
+    font-family: georgia;
+}
+.ok-button {
+  color: black;
+  background-color: white;
+  border-color: #FFDF80;
+  border-radius: 10px;
+}
+
+.end-button-container{
+  padding-bottom: 40px;
+  margin-top: -10;
+}

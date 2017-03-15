@@ -163,16 +163,14 @@ const SeemlessCover = React.createClass({
           </div>
           <div className="gradient-overlay infoi">
             <div className="info-overlay">
-            <h3>Our Cool Title</h3>
-            <h4 className="howItWorks"> How it works</h4>
-            <span className="headerDropdown glyphicon glyphicon-menu-down" aria-hidden="true" ></span>
-              <div className="row">
-                <div className="col-md-6">
-                  Read: Here you can find articles that you aren't usually exposed to based on your social media trends. Read articles from a wide range of opinions to burst our of your echo chamber! Reading this articles gains you credits that you can in turn use to promote articles you think are worth sharing
-                </div>
-                <div className="col-md-6">
-                  Contribute: Using credits you have earned from reading articles, you can promote articles that you think other people need to be reading. Post a link to an article or help promote one that has already been posted!
-                </div>
+              <h1> How it works </h1>
+              <div className="col-md-6 howItWorksRead">
+                <h2> Read articles you’re not usually exposed to </h2>
+                <span className="headerDropdown glyphicon glyphicon-menu-down" aria-hidden="true" ></span>
+              </div>
+              <div className="col-md-6 howItWorksCont">
+                <h2> Promote articles you care about </h2>
+                <span className="headerDropdown glyphicon glyphicon-menu-down" aria-hidden="true" ></span>
               </div>
             </div>
           </div>
