@@ -4,6 +4,10 @@
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 0px;
+  font-family: 'Roboto';
+}
+.panel-header h1{
+    font-family: 'Roboto';
 }
 
 .seemless-cover{
@@ -84,8 +88,14 @@ hr {
     display: inline-block;
 }
 
-.howItWorks h4{
+.howItWorksRead h2{
   display: inline-block;
+}
+.howItWorksCont h2{
+  display: inline-block;
+}
+.howItWorksRead {
+  padding-left: 0px;
 }
 .panel-header h4 {
   padding-right: 10px;
@@ -100,7 +110,6 @@ hr {
   cursor: hand;
 }
 .article-tab h3{
-  font-family: roboto-bold;
 }
 
 .tab-container {
@@ -144,4 +153,8 @@ hr {
 
 .category-tab-container{
   padding-top: 10px;
+}
+span.glyphicon-menu-down {
+    font-size: 1.5em;
+    padding-left: 5px;
 }

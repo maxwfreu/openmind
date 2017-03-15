@@ -7,6 +7,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Modal } from 'react-bootstrap'
 import { CoverRepeat } from './main'
 import DoneReading from './doneReadingPopup'
+import PromotePopup from './promoteBtn'
 import {SideInfo, SimilarArticles, ConsiderReading} from './sidearticles'
 
 var $ = require ('jquery')
@@ -207,6 +208,7 @@ const PageView = React.createClass({
           <SimilarArticles/>
           <hr style={{height:3+'px'}}/>
           <ConsiderReading/>
+          <PromotePopup />
         </div>
       </div>
     </div>
