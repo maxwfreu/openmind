@@ -35,7 +35,7 @@
 }
 
 .can-read {
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 25px;
   border-color: red;
   padding-left: 6px;
@@ -43,7 +43,7 @@
 }
 
 .can-not-read {
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 25px;
   border-color: deepskyblue;
   padding-left: 6px;
