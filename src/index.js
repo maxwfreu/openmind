@@ -63,24 +63,12 @@ const MyNavBar = React.createClass({
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <div className="container center-logo">
-                <Link className="navbar-text" to="/">
-                  <img className="center-logo" width="120" src={require('./images/logo-2.png')}/>
-                </Link>
-              </div>
             </div>
             <div id="navbar" className="collapse navbar-collapse">
               <ul className="read nav navbar-nav navbar-left">
                     <li className="read">
-                      <Link className="link-text" to="/earn">
-                        Read and earn
-                      </Link>
-                    </li>
-                </ul>
-                <ul className="contribute nav navbar-nav navbar-left">
-                    <li className="contribute">
-                      <Link className="link-text" to="/contribute">
-                         Promote Articles
+                      <Link className="navbar-text" to="/">
+                        <img className="center-logo" width="120" src={require('./images/logo-2.png')}/>
                       </Link>
                     </li>
               </ul>
@@ -114,8 +102,6 @@ const MyNavBar = React.createClass({
 render((
   <Router history={browserHistory}>
     <Route path="/" component={MyNavBar}>
-      <Route path="earn" component={Earn} />
-      <Route path="contribute" component={Contribute}/>
       <Route path="article/:uniqueKey" component={ArticleView}/>
     </Route>
   </Router>

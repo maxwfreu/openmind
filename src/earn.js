@@ -112,7 +112,7 @@ const CreateRow = React.createClass({
   }
 })
 
-const PopulateFeed = React.createClass ({
+export const PopulateEarnFeed = React.createClass ({
   render (){
     var rows = earnArticles.map(function(item, i) {
       if(i % 3 === 0){
@@ -160,7 +160,7 @@ const Earn = React.createClass({
       <div className="container">
 
 
-        <PopulateFeed/>
+        <PopulateEarnFeed/>
 
       </div>
     </div>

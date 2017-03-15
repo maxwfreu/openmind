@@ -87,10 +87,9 @@ const WriteStory = React.createClass({
   render() {
     return (
       <div>
-        <h4>Write a Story</h4>
-        <p>Sometimes an opinon on article isn't enough. Sometimes the best way to get people to understand your point of view is through empathy. Here you can share your story about how this topic has directly effected you or people you know.</p>
+        <h3>Write a Story</h3>
         <div className="textarea-container">
-          <textarea rows="4" cols="50" placeholder="Empathy!"></textarea>
+          <textarea rows="4" cols="50" placeholder="Sometimes an opinon on article isn't enough. Sometimes the best way to get people to understand your point of view is through empathy. Here you can share your story about how this topic has directly effected you or people you know."></textarea>
           <button className="submit-button btn btn-primary">Submit</button>
         </div>
 
