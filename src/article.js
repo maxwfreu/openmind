@@ -7,7 +7,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Modal } from 'react-bootstrap'
 import { CoverRepeat } from './main'
 import DoneReading from './doneReadingPopup'
-import PromotePopup from './promoteBtn'
 import {SideInfo, SimilarArticles, ConsiderReading} from './sidearticles'
 
 var $ = require ('jquery')
@@ -121,6 +120,12 @@ function loadText(callback) {
     client.send();
 }
 
+function showDoneButton(){
+  if(article.canEarn === true){
+    return (<DoneReading canEarn={article.canEarn}/>)
+  }
+}
+
 const ResponseTabs = React.createClass({
   handleSelect(index, last) {
     if(index ===0){
@@ -160,8 +165,7 @@ const ResponseTabs = React.createClass({
 
         <TabPanel>
           <div id="articleContent" style={{paddingTop: 5 + 'px'}}></div>
-            <DoneReading canEarn={article.canEarn}/>
-
+          {showDoneButton()}
         </TabPanel>
         <TabPanel>
           <WriteResponse/>
@@ -185,8 +189,7 @@ const MainArticle = React.createClass({
         <h2> {article.title} </h2>
         <h5> By SCOTT SHANE, MATTHEW ROSENBERG and ANDREW W. LEHREN &middot; MARCH 7, 2017 </h5>
         <img src={require(article.url)} alt="trump" style={{width: 100 + '%'}}/>
-
-        <p className="article-caption">The C.I.A. headquarters in Langley, Va. If the WikiLeaks documents are authentic, the release would be a serious blow to the agency</p>
+        <p className="article-caption">Read this article to earn 50 points. To recieve points, click the "I'm done reading" button when you've finished. </p>
         <ResponseTabs/>
       </div>
     )
@@ -207,7 +210,6 @@ const PageView = React.createClass({
           <SimilarArticles/>
           <hr style={{height:3+'px'}}/>
           <ConsiderReading/>
-          <PromotePopup />
         </div>
       </div>
     </div>

@@ -95,7 +95,7 @@ const PromotePopup = React.createClass({
 
     return (
         <Link onClick={this.open}>
-          <div className="donepopup">
+          <div className="promote-button">
           <button className="btn btn-outline btn-lg donepopup"> Promote Article </button>
         <Modal
           aria-labelledby='modal-label'

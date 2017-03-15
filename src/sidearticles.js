@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articleStyle.css'
 import './style/response.css'
+import PromotePopup from './promoteBtn'
 
 function generateDetail(canearn){
   if(canearn === true){
@@ -27,12 +28,7 @@ export const SideInfo = React.createClass({
   render () {
     return (
       <div className="infoBox">
-        <div className="activePoints">
-          <h2 className="active-detail"> 367,063 </h2>
-          <div className="active-detail read">
-            {generateContent(this.props.canEarn)}
-          </div>
-        </div>
+          <PromotePopup/>
           <div className="row">
           <div className="contributedBy">
             <div className="circles">
@@ -52,9 +48,6 @@ export const SideInfo = React.createClass({
             </div>
                         <h4> + 354 Read </h4>
           </div>
-        </div>
-        <div className="infoText">
-          {generateDetail(this.props.canEarn)}
         </div>
       </div>
     )
