@@ -5,7 +5,7 @@ import ModalExample from './login'
 import Main from './main'
 import Earn from './earn'
 import Contribute from './contribute'
-import ArticleView from './article'
+import {ArticleView} from './article'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/navstyle.css';

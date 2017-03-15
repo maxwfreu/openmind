@@ -5,7 +5,7 @@ import './style/articleStyle.css'
 import './style/response.css'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Modal } from 'react-bootstrap'
-import { SeemlessCover } from './main'
+import { CoverRepeat } from './main'
 import DoneReading from './doneReadingPopup'
 import {SideInfo, SimilarArticles, ConsiderReading} from './sidearticles'
 
@@ -177,7 +177,7 @@ const ResponseTabs = React.createClass({
 
 //NOTE this will only be one thumbnail
 
-export const MainArticle = React.createClass({
+const MainArticle = React.createClass({
   render(){
     return (
       <div className="mainArticle-text">
@@ -213,16 +213,33 @@ const PageView = React.createClass({
 }
 })
 
-const ArticleView = React.createClass({
+const SeemlessCoverArticle = React.createClass({
   render () {
-    $(document).ready(function () {
-           window.scrollTo(0,0);
-       });
+    return (
+      <div className="panel-header small">
+        <div className="header-container">
+          <div className="gradient-overlay">
+              <CoverRepeat/>
+          </div>
+          <div className="gradient-overlay infoi">
+            <div className="info-overlay">
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+})
+export const ArticleView = React.createClass({
+  render () {
+    // $(document).ready(function () {
+    //        window.scrollTo(0,0);
+    //    });
     articleKey = this.props.params.uniqueKey;
     article = getArticleInfo();
     return (
       <div>
-      <SeemlessCover/>
+        <SeemlessCoverArticle/>
         <div className="container-fluid">
           <PageView/>
         </div>
@@ -232,5 +249,3 @@ const ArticleView = React.createClass({
     )
   }
 })
-
-export default ArticleView;
