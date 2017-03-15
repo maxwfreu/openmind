@@ -80,7 +80,7 @@ const MyNavBar = React.createClass({
                 <ul className="contribute nav navbar-nav navbar-left">
                     <li className="contribute">
                       <Link className="link-text" to="/contribute">
-                         Contribute Points
+                         Promote Articles
                       </Link>
                     </li>
               </ul>

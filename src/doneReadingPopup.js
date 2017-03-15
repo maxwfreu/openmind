@@ -47,18 +47,17 @@ function generateModalBody(canearn){
       <h2> Congrats!</h2>
       <h4> You earned <b>50</b> credits for reading this article!</h4>
       <p> Post your opinion in the responses section or share a story in the stories section</p>
-      <button className="btn btn-sm btn-outline ok-button pull-right">OK</button>
       <br></br>
         <br></br>
       </div>)
-  } else return(
+  } else {
+    return(
     <div>
 
     <div className="congrats">
       <h2> Would you like to promote this article?</h2>
       <h4> You currently have <b>100</b> points. How many would you like to put towards this article? </h4>
         <Slider min={0} max={100} defaultValue={10} handle={handle}/>
-      <button className="btn btn-sm btn-outline ok-button pull-right">Promote</button>
       <br></br>
         <br></br>
    </div>
@@ -67,11 +66,28 @@ function generateModalBody(canearn){
  </div>
   );
 }
+}
+
+function generateButtonName(canearn){
+  if(canearn === true){
+    return 'OK';
+  } else {
+    return 'Promote';
+  }
+}
 
 const DoneReading = React.createClass({
 
   getInitialState(){
     return { showModal: false };
+  },
+
+  close(){
+    this.setState({ showModal: false });
+  },
+
+  open(){
+    this.setState({ showModal: true });
   },
 
   render() {
@@ -89,6 +105,9 @@ const DoneReading = React.createClass({
         >
         <Modal.Body>
           {generateModalBody(this.props.canEarn)}
+          <div className="end-button-container">
+            <button type="button" className="btn btn-sm btn-outline ok-button pull-right" onClick={this.close}>{generateButtonName(this.props.canEarn)}</button>
+          </div>
         </Modal.Body>
       </Modal>
       </div>

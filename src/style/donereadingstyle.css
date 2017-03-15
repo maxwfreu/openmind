@@ -17,5 +17,9 @@
   background-color: white;
   border-color: #FFDF80;
   border-radius: 10px;
+}
 
+.end-button-container{
+  padding-bottom: 40px;
+  margin-top: -10;
 }

@@ -40,7 +40,7 @@ export const SideInfo = React.createClass({
               <img className="img-circle img-next" src={require('./images/natasha.jpg')} alt="natasha"/>
               <img className="img-circle img-next" src={require('./images/pippa.jpg')} alt="pippa"/>
             </div>
-                        <h4> + 567 Contributed </h4>
+                        <h4> + 567 Promote </h4>
           </div>
         </div>
         <div className="row">
