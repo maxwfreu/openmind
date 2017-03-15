@@ -96,6 +96,8 @@ hr {
   display: inline-block;
   width: 18%;
   text-align: center;
+  cursor: pointer;
+  cursor: hand;
 }
 .article-tab h3{
   font-family: roboto-bold;

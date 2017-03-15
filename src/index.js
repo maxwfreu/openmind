@@ -39,13 +39,16 @@ $(document).ready(function () {
                 $(this).addClass('contribute-active');
 
         });
-            $('hr.title-bar').click(function (e) {
-              console.log("hi");
+        $('hr.title-bar').click(function (e) {
               $('ul.nav > li').removeClass('read-active');
               $('ul.nav > li').removeClass('contribute-active');
-                $(this).addClass('title-active');
-            });
+              $(this).addClass('title-active');
         });
+        $('a.navbar-text').click(function (e) {
+              $('ul.nav > li').removeClass('read-active');
+              $('ul.nav > li').removeClass('contribute-active');
+        });
+});
 
 const MyNavBar = React.createClass({
   render() {

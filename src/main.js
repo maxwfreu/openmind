@@ -47,7 +47,7 @@ const NewsCard = React.createClass({
         <div className="thumbnail">
           <img src={require(this.props.url)} alt="trump"/>
           <div className="caption">
-            <h5> {this.props.title} </h5>
+            <h4> {this.props.title} </h4>
             <p className="blurb"> {this.props.blurb} </p>
             <div className="thumbnail-info">
                 {generateContent(this.props.canEarn)}

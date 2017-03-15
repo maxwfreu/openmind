@@ -4,6 +4,16 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import './style/articleStyle.css'
 import './style/response.css'
 
+function generateDetail(canearn){
+  if(canearn === true){
+    return(
+      <h4> Read this article to earn 50 points. To recieve the points, click the “I’m done reading” button when you’ve finished. (We’ll be able to tell if you didn’t actually read it).</h4>
+    )
+  } else return (
+    <h4> After reading this article you will be able to use your points to promote it to other readers! To promote, click the “I’m done reading” button when you’ve finished. </h4>
+  );
+}
+
 function generateContent(canearn){
   if(canearn === true){
     return(<div><div className="ovalOverlay">
@@ -44,7 +54,7 @@ export const SideInfo = React.createClass({
           </div>
         </div>
         <div className="infoText">
-          <h4> Read this article to earn 50 points. To recieve the points, click the “I’m done reading” button when you’ve finished. (We’ll be able to tell if you didn’t actually read it).</h4>
+          {generateDetail(this.props.canEarn)}
         </div>
       </div>
     )
