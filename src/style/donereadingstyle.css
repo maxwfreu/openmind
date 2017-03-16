@@ -3,19 +3,20 @@
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
-  color: black;
-  background-color: white;
-  border-color: black;
-  border-radius: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  opacity: .7;
 }
 
 .congrats {
     font-family: georgia;
 }
+
 .ok-button {
-  color: black;
-  background-color: white;
-  border-color: #FFDF80;
+  color: white;
+  background-color: black;
+  opacity: .7;
   border-radius: 10px;
 }
 

@@ -7,12 +7,13 @@ import './style/mainstyle.css'
 import { CoverRepeat } from './main'
 
 
-var earnArticles = [{title: "Health Bill Would Add 24 Million Uninsured but Save $337 Billion, Report Says", url:'./images/healthbill.jpg', detail: '/articleText/healthbill.txt', author: "By THOMAS KAPLAN and ROBERT PEARMARCH 13, 2017", colSize:"col-md-6 col-sm-6 col-xs-12", points: 50, uniqueKey:'1', canEarn:true, blurb: "WASHINGTON — The House Republican plan to replace the Affordable Care Act would increase the number of people without health insurance by 24 million by 2026, while slicing $337 billion off federal budget deficits over that time, the nonpartisan Congressional Budget Office said Monday."},
-{title:"White House Says Trump’s Wiretap Claim Was Meant More Broadly", url:'./images/whitehouse.jpg', detail: '/articleText/whitehouse.txt', author: "By JULIE HIRSCHFELD DAVISMARCH 13, 2017", colSize:"col-md-3 col-sm-3 col-xs-6", uniqueKey:'2', canEarn:true, points: 45, blurb: "Two senior White House officials suggested on Monday that President Trump’s unsubstantiated claim that President Barack Obama had ..."},
-{title:"White House Addresses Trump’s Unorthodox Call to Preet Bharara", url:'./images/bharara.jpg', detail: '/articleText/bharara.txt', author: "By ERIC LICHTBLAU and WILLIAM K. RASHBAUMMARCH 12, 2017", colSize:"col-md-3 col-sm-3 col-xs-6", uniqueKey:'3', points: 45, canEarn:true, blurb: "WASHINGTON — The White House offered an explanation on Sunday for a mysterious phone call that President Trump placed to ..."},
-{title: "ObamaCare repeal analysis: Millions would drop coverage, costs would fall under bill", url:'./images/obamacare.jpg', detail: '/articleText/obamacare.txt',  author:"Fox News", colSize:"col-md-3 col-sm-4 col-xs-12", uniqueKey:'4', canEarn:true, points: 35, blurb: "Congressional budget scorekeepers released their highly anticipated analysis of Republicans’ ObamaCare repeal bill late Monday, estimating millions more people would be ..."},
-{title: "Why those in media bubble never got Trump's rise – and still don't", url:'./images/trumprise.jpg',author:'Howard Kurtz', detail: '/articleText/trumprise.txt', colSize: "col-md-6 col-sm-6 col-xs-12", uniqueKey:'5', canEarn:true, points: 30, blurb: "This just in: There really is a liberal media elite that dwell in an isolated bubble. And that, in turn, causes a disconnect from reality, as we saw during the 2016 campaign and which continues during the opening weeks of the Trump presidency."},
-{title: "Trump signs executive order to make fed agencies 'lean,’ more ‘accountable'", url:'./images/dictator.jpg', detail: '/articleText/executive.txt', author:"Fox News", colSize: "col-md-3 col-sm-6 col-xs-12", uniqueKey:'6', canEarn:true, points: 20, blurb: "President Trump on Monday ordered a top-to-bottom audit of every Executive Branch department and agency to save money and improve services."}];
+var earnArticles = [{title: "Health Bill Would Add 24 Million Uninsured but Save $337 Billion, Report Says", url:'./images/healthbill.jpg', detail: '/articleText/healthbill.txt', author: "By THOMAS KAPLAN and ROBERT PEARMARCH 13, 2017", colSize:"col-md-6 col-sm-6 col-xs-12", points: 50, totalPoints: "250,560", uniqueKey:'1', canEarn:true, blurb: "WASHINGTON — The House Republican plan to replace the Affordable Care Act would increase the number of people without health insurance by 24 million by 2026, while slicing $337 billion off federal budget deficits over that time, the nonpartisan Congressional Budget Office said Monday."},
+{title:"White House Says Trump’s Wiretap Claim Was Meant More Broadly", url:'./images/whitehouse.jpg', detail: '/articleText/whitehouse.txt', author: "By JULIE HIRSCHFELD DAVISMARCH 13, 2017", colSize:"col-md-3 col-sm-3 col-xs-6", uniqueKey:'2', canEarn:true, points: 45, totalPoints: "200,010", blurb: "Two senior White House officials suggested on Monday that President Trump’s unsubstantiated claim that President Barack Obama had ..."},
+{title:"White House Addresses Trump’s Unorthodox Call to Preet Bharara", url:'./images/bharara.jpg', detail: '/articleText/bharara.txt', author: "By ERIC LICHTBLAU and WILLIAM K. RASHBAUMMARCH 12, 2017", colSize:"col-md-3 col-sm-3 col-xs-6", uniqueKey:'3', points: 45,  totalPoints: "187,431", canEarn:true, blurb: "WASHINGTON — The White House offered an explanation on Sunday for a mysterious phone call that President Trump placed to ..."},
+{title: "ObamaCare repeal analysis: Millions would drop coverage, costs would fall under bill", url:'./images/obamacare.jpg', detail: '/articleText/obamacare.txt',  author:"Fox News", colSize:"col-md-3 col-sm-4 col-xs-12", uniqueKey:'4', canEarn:true, points: 35, totalPoints: "163,875", blurb: "Congressional budget scorekeepers released their highly anticipated analysis of Republicans’ ObamaCare repeal bill late Monday, estimating millions more people would be ..."},
+{title: "Why those in media bubble never got Trump's rise – and still don't", url:'./images/trumprise.jpg',author:'Howard Kurtz', detail: '/articleText/trumprise.txt', colSize: "col-md-6 col-sm-6 col-xs-12", uniqueKey:'5', canEarn:true, points: 30, totalPoints: "126,982", blurb: "This just in: There really is a liberal media elite that dwell in an isolated bubble. And that, in turn, causes a disconnect from reality, as we saw during the 2016 campaign and which continues during the opening weeks of the Trump presidency."},
+{title: "Trump signs executive order to make fed agencies 'lean,’ more ‘accountable'", url:'./images/dictator.jpg', detail: '/articleText/executive.txt', author:"Fox News", colSize: "col-md-3 col-sm-6 col-xs-12", uniqueKey:'6', canEarn:true, points: 20, totalPoints: "97,382", blurb: "President Trump on Monday ordered a top-to-bottom audit of every Executive Branch department and agency to save money and improve services."}
+];
 
 
 function getArticleInfo(articleKey) {
@@ -46,7 +47,7 @@ const NewsCard = React.createClass({
             <div className="thumbnail-info">
               <div>
                 <div className="thumbnail-readicon can-read"> <b>Earn {this.props.points} pts</b> </div>
-                <div className="thumbnail-credits read"> 35,674 pts</div>
+                <div className="thumbnail-credits read"> {this.props.totalPoints} pts</div>
               </div>
             </div>
           </div>
@@ -77,7 +78,7 @@ const NewsCardBig = React.createClass({
             <div className="thumbnail-info big">
               <div>
                 <div className="thumbnail-readicon can-read"> <b>Earn {this.props.points} pts</b> </div>
-                <div className="thumbnail-credits read">35,674 pts</div>
+                <div className="thumbnail-credits read">{this.props.totalPoints} pts</div>
               </div>
             </div>
           </div>
@@ -95,13 +96,13 @@ const CreateRow = React.createClass({
         if(item.colSize ==="col-md-6 col-sm-6 col-xs-12"){
           return(
             <div className={item.colSize} key={i}>
-              <NewsCardBig title={item.title} detail={item.detail} url={item.url} uniqueKey={item.uniqueKey} canEarn={item.canEarn} blurb={item.blurb} points={item.points}/>
+              <NewsCardBig title={item.title} detail={item.detail} url={item.url} uniqueKey={item.uniqueKey} canEarn={item.canEarn} blurb={item.blurb} points={item.points} totalPoints={item.totalPoints}/>
             </div>
           )
         } else {
           return(
             <div className={item.colSize} key={i}>
-              <NewsCard title={item.title} detail={item.detail} url={item.url} uniqueKey={item.uniqueKey} canEarn={item.canEarn} blurb={item.blurb} points={item.points}/>
+              <NewsCard title={item.title} detail={item.detail} url={item.url} uniqueKey={item.uniqueKey} canEarn={item.canEarn} blurb={item.blurb} points={item.points} totalPoints={item.totalPoints}/>
             </div>
           )
         }

@@ -175,3 +175,8 @@
   border-bottom: 1px solid;
   border-color: red;
 }
+
+.donereading-container {
+  text-align: center;
+  margin-top: 20px;
+}

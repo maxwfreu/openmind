@@ -5,6 +5,8 @@ import './style/articleStyle.css'
 import './style/response.css'
 import PromotePopup from './promoteBtn'
 
+var points = 0;
+var totalPoints = 0;
 function generateDetail(canearn){
   if(canearn === true){
     return(
@@ -20,26 +22,28 @@ function showReadButtion(canearn){
     return(
       <div>
         <div id="promote-button" style={{display: "none"}}>
-          <PromotePopup/>
+          <PromotePopup points={totalPoints}/>
         </div>
         <div id="earn-content">
           <div className="earn-point-indicator">
-            <p>Read <b>+50</b></p>
+            <p>Read <b>+ {points}</b></p>
           </div>
         <div className="numTotalPoints">
-            <p>3,656 pts</p>
+            <p>{totalPoints} pts</p>
         </div>
       </div>
       </div>
 
   )
 } else return (
-  <PromotePopup/>
+  <PromotePopup points={totalPoints}/>
 );
 }
 
 export const SideInfo = React.createClass({
   render () {
+    points = this.props.points;
+    totalPoints = this.props.totalPoints;
     return (
       <div className="infoBox">
         <div id="promote-button-place">{showReadButtion(this.props.canEarn)}</div>

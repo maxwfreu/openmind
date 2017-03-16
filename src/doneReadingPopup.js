@@ -11,7 +11,7 @@ import Slider from 'rc-slider'
 import PromotePopup from './promoteBtn'
 
 const Handle = Slider.Handle;
-
+var points = 0;
 const handle = (props) => {
   const { value, dragging, index, ...restProps } = props;
   return (
@@ -47,7 +47,7 @@ function generateModalBody(canearn){
     return(
       <div className="congrats">
       <h2> Congrats!</h2>
-      <h4> You earned <b>50</b> credits for reading this article!</h4>
+      <h4> You earned <b>{points}</b> credits for reading this article!</h4>
       <p> Post your opinion in the responses section or share a story in the stories section</p>
       <br></br>
         <br></br>
@@ -95,11 +95,11 @@ const DoneReading = React.createClass({
   },
 
   render() {
-
+    points = this.props.points;
     return (
         <Link onClick={this.open}>
-          <div className="donepopup">
-          <button className="btn btn-outline btn-lg donepopup"> I'm Done Reading </button>
+          <div className="donereading-container">
+          <button className="btn btn-lg donepopup"> I'm Done Reading </button>
         <Modal
           aria-labelledby='modal-label'
           style={modalStyle}
