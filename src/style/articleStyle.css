@@ -155,8 +155,23 @@
   padding-bottom: 15px;
 }
 
-.numTotalPoints h4{
+.numTotalPoints{
   display: inline-block;
   font-family: roboto;
-  padding-top: 3px;
+  font-size: 20px;
+}
+.numTotalPoints p {
+  margin-left: 60px;
+  border-bottom: 1px solid;
+  border-color: gold;
+}
+
+.earn-point-indicator {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.earn-point-indicator p{
+  border-bottom: 1px solid;
+  border-color: red;
 }

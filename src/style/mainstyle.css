@@ -160,7 +160,7 @@ span.glyphicon-menu-down {
   left:0;
   padding-top: 25px;
   padding-right: 33px;
-  padding-left: 27%;
+  margin-left: 27%;
 }
 
 .add-article-button {

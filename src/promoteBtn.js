@@ -96,22 +96,22 @@ const PromotePopup = React.createClass({
     return (
         <Link onClick={this.open}>
           <div className="promote-button">
-          <button className="btn btn-outline btn-lg donepopup"> Promote Article </button>
-        <Modal
-          aria-labelledby='modal-label'
-          style={modalStyle}
-          backdropStyle={backdropStyle}
-          show={this.state.showModal}
-          onHide={this.close}
-        >
-        <Modal.Body>
-          {generateModalBody(this.props.canEarn)}
-          <div className="end-button-container">
-            <button type="button" className="btn btn-sm btn-outline ok-button pull-right" onClick={this.close}>{generateButtonName(this.props.canEarn)}</button>
+            <button className="btn btn-outline btn-lg donepopup"> Promote Article </button>
+            <p className="article-promotion-points"> <b>367,234 pts</b></p>
+            <Modal
+              aria-labelledby='modal-label'
+              style={modalStyle}
+              backdropStyle={backdropStyle}
+              show={this.state.showModal}
+              onHide={this.close}>
+              <Modal.Body>
+                {generateModalBody(this.props.canEarn)}
+                <div className="end-button-container">
+                  <button type="button" className="btn btn-sm btn-outline ok-button pull-right" onClick={this.close}>{generateButtonName(this.props.canEarn)}</button>
+                </div>
+              </Modal.Body>
+            </Modal>
           </div>
-        </Modal.Body>
-      </Modal>
-      </div>
         </Link>
     );
   },

@@ -15,28 +15,28 @@ function generateDetail(canearn){
   );
 }
 
-function generateContent(canearn){
+function showReadButtion(canearn){
   if(canearn === true){
-    return(<div><div className="ovalOverlay">
-      <div className="moneyInOval"><b>+ 50</b></div>
+    return(
+      <div>
+        <div className="earn-point-indicator">
+          <p>Read <b>+50</b></p>
+        </div>
+      <div className="numTotalPoints">
+          <p>3,656 pts</p>
+      </div>
     </div>
-    <div className="thumbnail-readicon"> <b>Read</b> </div></div>)
-  } else return;
+  )
+} else return (
+  <PromotePopup/>
+);
 }
 
 export const SideInfo = React.createClass({
   render () {
     return (
       <div className="infoBox">
-          <PromotePopup/>
-          <div className="row">
-          <div className="col-md-4 redtagWrap">
-            <button className="btn btn-outline btn-md readtag">Read +50</button>
-          </div>
-          <div className="col-md-4 numTotalPoints">
-              <h4>3,656 pts</h4>
-          </div>
-        </div>
+          {showReadButtion(this.props.canEarn)}
           <div className="row">
           <div className="contributedBy">
             <div className="circles">

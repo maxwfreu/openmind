@@ -151,7 +151,7 @@ const ResponseTabs = React.createClass({
           <TabList/> is a composite component and is the container for the <Tab/>s.
         */}
 
-        <TabList className="tab-container">
+        <TabList className="tab-response-container">
 
           {}
 
