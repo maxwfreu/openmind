@@ -22,7 +22,7 @@ const NewsCard = React.createClass({
             <div className="thumbnail-info">
               <div>
                 <div className="thumbnail-readicon can-not-read"> <b>Contribute</b> </div>
-                <div className="thumbnail-credits contribute"> <b>35,674</b> </div>
+                <div className="thumbnail-credits read"> 35,674 pts </div>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ const NewsCardBig = React.createClass({
             <div className="thumbnail-info big">
               <div>
                 <div className="thumbnail-readicon can-not-read"> <b>Contribute</b> </div>
-                <div className="thumbnail-credits contribute"> <b>35,674</b> </div>
+                <div className="thumbnail-credits read"> 35,674 pts </div>
               </div>
             </div>
           </div>

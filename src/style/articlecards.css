@@ -51,13 +51,9 @@
 }
 
 .thumbnail-credits.read {
-  border-bottom: 2px solid;
-  border-color: red;
-}
-
-.thumbnail-credits.contribute {
-  border-bottom: 2px solid;
-  border-color: deepskyblue;
+  border-bottom: 1px solid;
+  border-color: gold;
+  font-size: 14px;
 }
 
 

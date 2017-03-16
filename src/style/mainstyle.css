@@ -46,6 +46,10 @@
 }
 
 
+.gradient-overlay.small {
+  height: 120px;
+}
+
 .infoi {
   position: absolute;
   top: 0;

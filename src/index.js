@@ -57,40 +57,16 @@ const MyNavBar = React.createClass({
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container">
             <div className="navbar-header">
-              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
+              <Link className="navbar-brand" to="/">
+                <img width="120" src={require('./images/logo-2.png')}/>
+              </Link>
             </div>
-            <div id="navbar" className="collapse navbar-collapse">
-              <ul className="read nav navbar-nav navbar-left">
-                    <li className="read">
-                      <Link className="navbar-text" to="/">
-                        <img className="center-logo" width="120" src={require('./images/logo-2.png')}/>
-                      </Link>
-                    </li>
-              </ul>
-              <ul className="nav navbar-nav navbar-right">
-                <li>
-                  <Link> About Us </Link>
-                </li>
-                <li>
-                  <Link> My Account </Link>
-                </li>
-                <li className="credit-container">
-                  <div>
-                    <div className="ovalOverlay">
-                      <div className="moneyInOval"><b>350</b></div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <ul className="nav navbar-nav navbar-right">
+              <li><Link href="#">About Us</Link></li>
+              <li><Link href="#">My Account</Link></li>
+            </ul>
           </div>
         </nav>
-
         <div style={{paddingTop: 50 + 'px'}}>
           {this.props.children || <Main />}
         </div>
