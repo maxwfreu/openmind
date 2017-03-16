@@ -10,6 +10,10 @@
   border-color: #FFDF80;
 }
 
+.navbar {
+  font-family: 'Roboto', sans-serif;
+}
+
 
 .contribute-active {
   border-bottom: 3px solid;
@@ -35,6 +39,12 @@
     margin-bottom:0;
 }
 
+.nav-points {
+  color: black;
+  border-bottom: 1px solid;
+  border-color: gold;
+  font-size: 20px;
+}
 
 .ovalParentOverlay{
     background:none;

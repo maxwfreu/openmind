@@ -1,10 +1,10 @@
 
 .panel-header {
-  max-height: 220px;
+  max-height: 180px;
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 0px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 .panel-header h1{
     font-family: 'Roboto';
@@ -12,7 +12,7 @@
 
 .seemless-cover{
   width: 200px;
-  height: 220px;
+  height: 180px;
 }
 
 .panel-header.small {
@@ -68,6 +68,7 @@ hr {
   padding-top: 0px;
 }
 
+
 .search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   padding-left: 20px;
 }
@@ -92,10 +93,10 @@ hr {
     display: inline-block;
 }
 
-.howItWorksRead h2{
+.howItWorksRead h3{
   display: inline-block;
 }
-.howItWorksCont h2{
+.howItWorksCont h3{
   display: inline-block;
 }
 .howItWorksRead {
@@ -115,6 +116,7 @@ hr {
 }
 .article-tab h6{
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .tab-container {
@@ -161,6 +163,7 @@ span.glyphicon-menu-down {
   padding-top: 25px;
   padding-right: 33px;
   margin-left: 27%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .add-article-button {
@@ -168,6 +171,8 @@ span.glyphicon-menu-down {
   right:0;
   padding-top: 25px;
   padding-right: 33px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .container-fluid.offset{

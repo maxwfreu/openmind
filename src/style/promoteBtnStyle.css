@@ -1,5 +1,5 @@
 .donepopup {
-  font-family: georgia;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   color: white;
   background-color: black;
@@ -32,6 +32,8 @@
 .promote-button{
   height:auto;
   padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .article-promotion-points {
@@ -42,4 +44,6 @@
   color: black;
   margin-left: 10px;
   margin-top: 3px;
+  font-family: 'Roboto', sans-serif;
+
 }

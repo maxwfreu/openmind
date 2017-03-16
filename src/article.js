@@ -33,7 +33,6 @@ var allArticles = [{title: "Why those in media bubble never got Trump's rise –
 
 var articleKey;
 var article;
-var title;
 
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
@@ -230,7 +229,6 @@ const SeemlessCoverArticle = React.createClass({
           </div>
           <div className="gradient-overlay infoi">
             <div className="info-overlay">
-              <h1>{title}</h1>
             </div>
           </div>
         </div>
@@ -246,11 +244,6 @@ export const ArticleView = React.createClass({
     //    });
     articleKey = this.props.params.uniqueKey;
     article = getArticleInfo();
-    if(article.canEarn === true){
-      title= "Earn points by reading articles you aren't typically exposed to"
-    } else {
-      title= "Promote articles you care about"
-    }
     return (
       <div>
         <SeemlessCoverArticle/>

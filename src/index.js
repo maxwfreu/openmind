@@ -55,7 +55,7 @@ const MyNavBar = React.createClass({
     return (
       <div>
         <nav className="navbar navbar-default navbar-fixed-top">
-          <div className="container">
+          <div className="container-fluid">
             <div className="navbar-header">
               <Link className="navbar-brand" to="/">
                 <img width="120" src={require('./images/logo-2.png')}/>
@@ -64,6 +64,7 @@ const MyNavBar = React.createClass({
             <ul className="nav navbar-nav navbar-right">
               <li><Link href="#">About Us</Link></li>
               <li><Link href="#">My Account</Link></li>
+              <li><Link href="#"><p className="nav-points">100 pts</p></Link></li>
             </ul>
           </div>
         </nav>

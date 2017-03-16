@@ -26,12 +26,14 @@
   float:right;
   font-size: 18px;
   font-style: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 .thumbnail-readicon {
   display: inline-block;
   float:left;
   font-size: 18px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .can-read {
