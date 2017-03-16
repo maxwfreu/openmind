@@ -200,8 +200,8 @@ const CategoryTabs = React.createClass({
 
           {}
 
-          <Tab className="article-tab"><h4>Read Articles</h4></Tab>
-          <Tab className="article-tab two"><h4>Promote Articles</h4></Tab>
+          <Tab className="article-tab"><h6>Read Articles</h6></Tab>
+          <Tab className="article-tab two"><h6>Promote Articles</h6></Tab>
           <hr className="article-underline" />
 
         </TabList>
@@ -230,10 +230,13 @@ const Main = React.createClass({
 
       <SeemlessCover/>
       <div className="container-fluid offset">
-          <CategoryTabs className="category-tab-shift"/>
+          <CategoryTabs />
       </div>
       <div className="filter">
         <p>Filter: <b>Top picks for you &#x25BC;</b></p>
+      </div>
+      <div className="add-article-button">
+        <button className="btn btn-sm our-button"><b>Add An Article</b></button>
       </div>
 
     </div>

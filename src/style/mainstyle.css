@@ -113,11 +113,12 @@ hr {
   cursor: pointer;
   cursor: hand;
 }
-.article-tab h3{
+.article-tab h6{
+  font-size: 20px;
 }
 
 .tab-container {
-  width: 50%;
+  width: 25%;
 }
 
 .article-tab.two.ReactTabs__Tab--selected ~ hr {
@@ -156,7 +157,14 @@ span.glyphicon-menu-down {
 }
 .filter {
   position: absolute;
-  float: right;
+  left:0;
+  padding-top: 25px;
+  padding-right: 33px;
+  padding-left: 27%;
+}
+
+.add-article-button {
+  position: absolute;
   right:0;
   padding-top: 25px;
   padding-right: 33px;
@@ -164,4 +172,11 @@ span.glyphicon-menu-down {
 
 .container-fluid.offset{
   position: absolute;
+}
+
+.our-button {
+  background-color: black;
+  opacity: .7;
+  color: white;
+  border-radius: 25px;
 }
