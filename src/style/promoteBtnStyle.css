@@ -9,6 +9,10 @@
   border-radius: 30px;
 }
 
+.donepopup button{
+  font-family: roboto;
+}
+
 .congrats {
     font-family: georgia;
 }

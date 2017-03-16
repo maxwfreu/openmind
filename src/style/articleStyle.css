@@ -52,7 +52,8 @@
 }
 .infoBox {
   padding-bottom: 50px;
-  font-family: georgia;
+  padding-top: 80px;
+  font-family: roboto;
 }
 .readBy h4{
   display: inline-block;
@@ -89,8 +90,6 @@
     border-radius: 50%;
     width: 50px;
     height:50px;
-    border: 2px solid;
-    border-color: black;
 }
 
 .img-next {
@@ -142,4 +141,22 @@
   padding-top: 3px;
   padding-left: 3px;
   font-size: 18px;
+}
+
+.readtag {
+  color: black;
+  border-color: #ED1B24;
+  background-color: white;
+  border-color: red;
+  border-radius: 5px;
+  font-family: roboto;
+}
+.redtagWrap {
+  padding-bottom: 15px;
+}
+
+.numTotalPoints h4{
+  display: inline-block;
+  font-family: roboto;
+  padding-top: 3px;
 }

@@ -30,13 +30,21 @@ export const SideInfo = React.createClass({
       <div className="infoBox">
           <PromotePopup/>
           <div className="row">
+          <div className="col-md-4 redtagWrap">
+            <button className="btn btn-outline btn-md readtag">Read +50</button>
+          </div>
+          <div className="col-md-4 numTotalPoints">
+              <h4>3,656 pts</h4>
+          </div>
+        </div>
+          <div className="row">
           <div className="contributedBy">
             <div className="circles">
               <img className="img-circle" src={require('./images/max.jpg')} alt="max"/>
               <img className="img-circle img-next" src={require('./images/natasha.jpg')} alt="natasha"/>
               <img className="img-circle img-next" src={require('./images/pippa.jpg')} alt="pippa"/>
             </div>
-                        <h4> + 567 Promote </h4>
+                        <h4>+ 567 have promoted</h4>
           </div>
         </div>
         <div className="row">
@@ -46,7 +54,7 @@ export const SideInfo = React.createClass({
               <img className="img-circle img-next" src={require('./images/natasha.jpg')}  alt="natasha"/>
               <img className="img-circle img-next" src={require('./images/max.jpg')} alt="max"/>
             </div>
-                        <h4> + 354 Read </h4>
+                        <h4>+ 354 have read</h4>
           </div>
         </div>
       </div>
