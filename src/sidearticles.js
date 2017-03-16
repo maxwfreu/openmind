@@ -54,7 +54,7 @@ export const SideInfo = React.createClass({
               <img className="img-circle img-next" src={require('./images/natasha.jpg')} alt="natasha"/>
               <img className="img-circle img-next" src={require('./images/pippa.jpg')} alt="pippa"/>
             </div>
-                        <h4>+ 567 have promoted</h4>
+                        <h4>+ {(Math.floor(Math.random() * (40000 - 10000) + 10000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} have promoted</h4>
           </div>
         </div>
         <div className="row">
@@ -64,7 +64,7 @@ export const SideInfo = React.createClass({
               <img className="img-circle img-next" src={require('./images/natasha.jpg')}  alt="natasha"/>
               <img className="img-circle img-next" src={require('./images/max.jpg')} alt="max"/>
             </div>
-                        <h4>+ 354 have read</h4>
+                        <h4>+  {(Math.floor(Math.random() * (100000 - 50000) + 50000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} have read</h4>
           </div>
         </div>
       </div>
@@ -76,12 +76,12 @@ export const SimilarArticles = React.createClass({
   render(){
     return (
       <div className="similarArticles">
-        <h2>Similar Articles</h2>
+        <h4>Similar Articles</h4>
         <div>
           <h5 className="title-group">
             White House budget director’s false claims about the Obamacare legislative process
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> +40 </p>
+             <p className="title-group"> <b>+50</b> </p>
         </h5>
 
         </div>
@@ -89,14 +89,14 @@ export const SimilarArticles = React.createClass({
           <h5 className="title-group">
             Whoops! Sorry about that frigid camp-out, but ballot placement is a lottery
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> +50 </p>
+             <p className="title-group"> <b>+45</b> </p>
            </h5>
         </div>
         <div>
           <h5 className="title-group">
             President Trump’s war on quotation marks
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> +40 </p>
+             <p className="title-group"> <b>+40</b> </p>
            </h5>
         </div>
       </div>
@@ -118,26 +118,26 @@ export const ConsiderReading = React.createClass({
   render(){
     return (
       <div className="similarArticles">
-        <h2>Consider Reading</h2>
+        <h4>Consider Reading</h4>
         <div>
           <h5 className="title-group">
             Sean Spicer just explained why ‘wire tapping’ is different from wiretapping
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> +30 </p>
+             <p className="title-group"> <b>+30</b> </p>
            </h5>
         </div>
         <div>
           <h5 className="title-group">
             Democrats hope to use Obamacare rewrite to turn activism into change
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> +40 </p>
+             <p className="title-group"> <b>+40</b> </p>
            </h5>
         </div>
         <div>
           <h5 className="title-group">
               Affordable Care Act revision would reduce insured numbers by 24 million, CBO projects
              <span className="title-group mid">&#124; </span>
-             <p className="title-group"> +60 </p>
+             <p className="title-group"> <b>+60</b> </p>
            </h5>
         </div>
       </div>

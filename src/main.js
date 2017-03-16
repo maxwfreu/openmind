@@ -200,8 +200,8 @@ const CategoryTabs = React.createClass({
 
           {}
 
-          <Tab className="article-tab"><h6>Read Articles</h6></Tab>
-          <Tab className="article-tab two"><h6>Promote Articles</h6></Tab>
+          <Tab className="article-tab"><h6>Read</h6></Tab>
+          <Tab className="article-tab two"><h6>Promote</h6></Tab>
           <hr className="article-underline" />
 
         </TabList>

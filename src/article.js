@@ -87,7 +87,7 @@ const WriteStory = React.createClass({
   render() {
     return (
       <div>
-        <h3>Write a Story</h3>
+        <h4>Write a Story</h4>
         <div className="textarea-container">
           <textarea rows="4" cols="50" placeholder="Sometimes an opinon on article isn't enough. Sometimes the best way to get people to understand your point of view is through empathy. Here you can share your story about how this topic has directly effected you or people you know."></textarea>
           <button className="submit-button btn btn-primary">Submit</button>
@@ -155,8 +155,8 @@ const ResponseTabs = React.createClass({
           {}
 
           <Tab className="response-tab one"><h3>Article</h3></Tab>
-          <Tab className="response-tab two"><h3>Responses</h3></Tab>
-          <Tab className="response-tab three"><h3>Stories</h3></Tab>
+          <Tab className="response-tab two"><h3>Stories</h3></Tab>
+          <Tab className="response-tab three"><h3>Responses</h3></Tab>
           <hr className="underline" />
 
         </TabList>
@@ -168,12 +168,13 @@ const ResponseTabs = React.createClass({
           <div className="donereading-container">{showDoneButton()}</div>
         </TabPanel>
         <TabPanel>
-          <WriteResponse/>
-          <Responses/>
+          <WriteStory className="inner-tab-text"/>
+            <Stories/>
         </TabPanel>
         <TabPanel>
-          <WriteStory/>
-            <Stories/>
+            <WriteResponse className="inner-tab-text"/>
+            <Responses/>
+
         </TabPanel>
       </Tabs>
     )

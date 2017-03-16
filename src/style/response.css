@@ -1,10 +1,13 @@
 .response-tab {
   display: inline-block;
-  width: 33.3333%;
+  width: 14%;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 .response-tab h3{
-  font-family: roboto-bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-style: bold;
 }
 
 .tab-response-container {
@@ -12,25 +15,28 @@
 }
 
 .two.ReactTabs__Tab--selected ~ hr {
-  margin-left: 33.33333333%;
+  margin-left: 14%;
 }
 
 .three.ReactTabs__Tab--selected ~ hr {
-  margin-left: 66.66666666%;
+  margin-left: 28%;
 }
 
 
 .underline {
-  height: .25rem;
-  width: 33.3333333%;
+  height: 2px;
+  width: 14%;
   margin: 0;
-  background: -webkit-linear-gradient(-90deg, white, deepskyblue, white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, white, deepskyblue, white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, white, deepskyblue, white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, white, deepskyblue, white); /* Standard syntax */  border: none;
+  background: -webkit-linear-gradient(-90deg, white, red, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, white, red, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, white, red, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, white, red, white); /* Standard syntax */  border: none;
   transition: .3s ease-in-out;
 }
 
+.inner-tab-text {
+  font-family: 'Roboto', sans-serif;
+}
 textarea {
     resize: none;
     width: 100%;
