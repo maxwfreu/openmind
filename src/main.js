@@ -200,20 +200,14 @@ const CategoryTabs = React.createClass({
 
           {}
 
-          <Tab className="article-tab one"><h4>All</h4></Tab>
-          <Tab className="article-tab two"><h4>Read Articles</h4></Tab>
-          <Tab className="article-tab three"><h4>Promote Articles</h4></Tab>
+          <Tab className="article-tab"><h4>Read Articles</h4></Tab>
+          <Tab className="article-tab two"><h4>Promote Articles</h4></Tab>
           <hr className="article-underline" />
 
         </TabList>
 
         {}
 
-        <TabPanel>
-          <div className="container-fluid">
-            <PopulateFeed/>
-          </div>
-        </TabPanel>
         <TabPanel>
           <div className="container-fluid ">
             <PopulateEarnFeed/>
