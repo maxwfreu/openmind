@@ -19,13 +19,19 @@ function showReadButtion(canearn){
   if(canearn === true){
     return(
       <div>
-        <div className="earn-point-indicator">
-          <p>Read <b>+50</b></p>
+        <div id="promote-button" style={{display: "none"}}>
+          <PromotePopup/>
         </div>
-      <div className="numTotalPoints">
-          <p>3,656 pts</p>
+        <div id="earn-content">
+          <div className="earn-point-indicator">
+            <p>Read <b>+50</b></p>
+          </div>
+        <div className="numTotalPoints">
+            <p>3,656 pts</p>
+        </div>
       </div>
-    </div>
+      </div>
+
   )
 } else return (
   <PromotePopup/>
@@ -36,7 +42,7 @@ export const SideInfo = React.createClass({
   render () {
     return (
       <div className="infoBox">
-          {showReadButtion(this.props.canEarn)}
+        <div id="promote-button-place">{showReadButtion(this.props.canEarn)}</div>
           <div className="row">
           <div className="contributedBy">
             <div className="circles">

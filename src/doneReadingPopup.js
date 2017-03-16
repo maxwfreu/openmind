@@ -8,6 +8,8 @@ require('rc-slider/assets/index.css');
 require('rc-tooltip/assets/bootstrap.css');
 import Tooltip from 'rc-tooltip'
 import Slider from 'rc-slider'
+import PromotePopup from './promoteBtn'
+
 const Handle = Slider.Handle;
 
 const handle = (props) => {
@@ -82,7 +84,9 @@ const DoneReading = React.createClass({
     return { showModal: false };
   },
 
-  close(){
+  close_modal(){
+    document.getElementById("promote-button").style.display = "inline-block";
+    document.getElementById("earn-content").style.display = "none";
     this.setState({ showModal: false });
   },
 
@@ -106,7 +110,7 @@ const DoneReading = React.createClass({
         <Modal.Body>
           {generateModalBody(this.props.canEarn)}
           <div className="end-button-container">
-            <button type="button" className="btn btn-sm btn-outline ok-button pull-right" onClick={this.close}>{generateButtonName(this.props.canEarn)}</button>
+            <button type="button" className="btn btn-sm btn-outline ok-button pull-right" onClick={this.close_modal}>{generateButtonName(this.props.canEarn)}</button>
           </div>
         </Modal.Body>
       </Modal>

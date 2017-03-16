@@ -83,8 +83,8 @@ const PromotePopup = React.createClass({
     return { showModal: false };
   },
 
-  close(){
-    this.setState({ showModal: false });
+  close_up(){
+    //this.setState({ showModal: false });
   },
 
   open(){
