@@ -14,8 +14,8 @@ var $ = require ('jquery')
 var sideData = [{title: "North Korea Tensions Pose Early, and Perilous, Test for Trump", url:'./images/nkorea.jpg'}, {title:"Dutch Fear Russian Meddling, and U.S. Cash, in Election ", url:'./images/dutch.jpg'}, {title:"Trump is a madman", url:'./images/dictator.jpg'}];
 Tabs.setUseDefaultStyles(false);
 
-var responseData = [{content: "This is a response", user:"John Doe"}, {content: "Wow, this sure is interesting!!!", user:"Jane Doe"}];
-var storyData = [{content: "This is a story", user:"John Doe"},  {content: "This one time this thing happened to me that is simliar to this :D", user:"Jane Doe"}];
+var responseData = [{content: "This is a response", user:"John Doe"}, {content: "Wow, this sure is interesting!!!", user:"Jane Doe"}, {content: "This one time this thing happened to me that is simliar to this :D", user:"Natasha Berk"}, {content: "This one time this thing happened to me that is simliar to this :D", user:"Max Freundlich"}];
+var storyData = [{content: "This is a story", user:"John Doe"},  {content: "This one time this thing happened to me that is simliar to this :D", user:"Jane Doe"}, {content: "This one time this thing happened to me that is simliar to this :D", user:"Natasha Berk"}];
 
 var allArticles = [{title: "Why those in media bubble never got Trump's rise – and still don't", url:'./images/trumprise.jpg',author:'Howard Kurtz', detail: '/articleText/trumprise.txt', colSize: "col-md-6 col-sm-6 col-xs-12", uniqueKey:'5', canEarn:true, points: 30, totalPoints: "126,982", blurb: "This just in: There really is a liberal media elite that dwell in an isolated bubble. And that, in turn, causes a disconnect from reality, as we saw during the 2016 campaign and which continues during the opening weeks of the Trump presidency."},
 {title:"CBO: Defunding Planned Parenthood would lead to thousands more births", url:'./images/plannedparent.jpeg', detail: '/articleText/plannedparent.txt', author: "By Sandhya Somashekhar March 13 at 10:27 PM", colSize:"col-md-3 col-sm-3 col-xs-6", uniqueKey:'11', canEarn:false, totalPoints: "316,452", blurb: "A congressional plan to make Planned Parenthood ineligible for federal funding would leave many ... "},
@@ -61,7 +61,8 @@ const Responses = React.createClass({
     var items = responseData.map(function(item, i) {
          return(
            <div className="well" key={i}>
-             <p>{item.content} - <i>{item.user}</i></p>
+             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
+             <p> - <i>{item.user}</i></p>
            </div>
          )
     });
@@ -72,12 +73,9 @@ const Responses = React.createClass({
 const WriteResponse = React.createClass({
   render() {
     return (
-      <div>
-        <h4>Write a Response</h4>
-        <div className="textarea-container">
-          <textarea rows="4" cols="50" placeholder="What is your opinion?"></textarea>
-          <button className="submit-button btn btn-primary">Submit</button>
-        </div>
+      <div className="response-container">
+        <p>Did you find this artile thought-provoking? Write a response for others to read. </p>
+        <h4><b><u>Add a response</u></b></h4>
       </div>
     )
   }
@@ -86,13 +84,9 @@ const WriteResponse = React.createClass({
 const WriteStory = React.createClass({
   render() {
     return (
-      <div>
-        <h4>Write a Story</h4>
-        <div className="textarea-container">
-          <textarea rows="4" cols="50" placeholder="Sometimes an opinon on article isn't enough. Sometimes the best way to get people to understand your point of view is through empathy. Here you can share your story about how this topic has directly effected you or people you know."></textarea>
-          <button className="submit-button btn btn-primary">Submit</button>
-        </div>
-
+      <div className="response-container">
+        <p>Does this article speak to you? Do you relate to it especially well? Tell us your story. Telling story about our lives is the best way to build empathy and encourage open minded reading.</p>
+        <h4><b><u>Write a Story</u></b></h4>
       </div>
     )
   }
@@ -102,7 +96,8 @@ const Stories = React.createClass({
     var items = storyData.map(function(item, i) {
          return(
            <div className="well" key={i}>
-             <p>{item.content} - <i>{item.user}</i></p>
+             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
+             <p> - <i>{item.user}</i></p>
            </div>
          )
     });
@@ -187,11 +182,13 @@ const MainArticle = React.createClass({
   render(){
     return (
       <div className="mainArticle-text">
+        <div className="article-title-info">
         <h2> {article.title} </h2>
         <h5> By SCOTT SHANE, MATTHEW ROSENBERG and ANDREW W. LEHREN &middot; MARCH 7, 2017 </h5>
         <img src={require(article.url)} alt="trump" style={{width: 100 + '%'}}/>
-        <p className="article-caption">Read this article to earn 50 points. To recieve points, click the "I'm done reading" button when you've finished. </p>
-        <ResponseTabs/>
+        <p className="article-caption">{article.blurb}</p>
+        </div>
+      <ResponseTabs/>
       </div>
     )
   }

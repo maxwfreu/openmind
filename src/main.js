@@ -166,7 +166,7 @@ const SeemlessCover = React.createClass({
           </div>
           <div className="gradient-overlay infoi">
             <div className="info-overlay">
-              <h2> How it works </h2>
+              <h2> Disrupting echo chambers with crowdpowered news </h2>
               <div className="col-md-6 howItWorksRead">
                 <h3> Read articles you’re not usually exposed to </h3>
                 <span className="headerDropdown glyphicon glyphicon-menu-down" aria-hidden="true" ></span>

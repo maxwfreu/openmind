@@ -143,6 +143,10 @@
   font-size: 18px;
 }
 
+.article-title-info{
+  font-family: 'Roboto', sans-serif;
+}
+
 .readtag {
   color: black;
   border-color: #ED1B24;
@@ -179,4 +183,14 @@
 .donereading-container {
   text-align: center;
   margin-top: 20px;
+}
+
+.response-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.well {
+  font-family: 'Roboto', sans-serif;
 }
