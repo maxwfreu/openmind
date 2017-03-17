@@ -61,10 +61,17 @@ const MyNavBar = React.createClass({
                 <img width="120" src={require('./images/logo-2.png')}/>
               </Link>
             </div>
-            <ul className="nav navbar-nav navbar-right">
+            <ul className="nav navbar-nav navbar-right navbar-shift">
+              <li><Link href="#"><i className="material-icons">search</i></Link></li>
               <li><Link href="#">About Us</Link></li>
               <li><Link href="#">My Account</Link></li>
-              <li><Link href="#"><p className="nav-points">100 pts</p></Link></li>
+              <li><Link href="#">
+                <div className="ovalParentOverlay">
+                  <div className="ovalOverlay">
+                    <div className="moneyInOval"> 100 </div>
+                  </div>
+                </div>
+              </Link></li>
             </ul>
           </div>
         </nav>

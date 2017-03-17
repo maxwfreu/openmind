@@ -1,6 +1,6 @@
 
 .thumbnail {
-  height: 350px;
+  height: 400px;
 }
 
 .customCard {
@@ -9,7 +9,7 @@
 }
 
 .imgContainer {
-  max-height: 170px;
+  max-height: 150px;
   max-width: 100%;
   overflow: hidden;
 }

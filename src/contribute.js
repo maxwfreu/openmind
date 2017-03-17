@@ -21,8 +21,8 @@ const NewsCard = React.createClass({
             <p className="blurb big"> {this.props.blurb} </p>
             <div className="thumbnail-info">
               <div>
-                <div className="thumbnail-readicon can-not-read"> <b>Contribute</b> </div>
-                <div className="thumbnail-credits read"> {this.props.totalPoints} pts </div>
+                <div className="thumbnail-readicon"> Contribute </div>
+                <div className="thumbnail-credits read"> <b> {this.props.totalPoints} pts</b> </div>
               </div>
             </div>
           </div>
@@ -46,8 +46,8 @@ const NewsCardBig = React.createClass({
             <p className="blurb big"> {this.props.blurb} </p>
             <div className="thumbnail-info big">
               <div>
-                <div className="thumbnail-readicon can-not-read"> <b>Contribute</b> </div>
-                <div className="thumbnail-credits read"> {this.props.totalPoints} pts </div>
+                <div className="thumbnail-readicon"> Contribute </div>
+                <div className="thumbnail-credits read"> <b> {this.props.totalPoints} pts</b></div>
               </div>
             </div>
           </div>
