@@ -236,7 +236,7 @@ const Main = React.createClass({
         <p>Filter: <b>Top picks for you &#x25BC;</b></p>
       </div>
       <div className="add-article-button">
-        <button className="btn btn-sm our-button"><b>Add An Article</b></button>
+        <button className="btn btn-sm our-button"><b>+ Add An Article</b></button>
       </div>
 
     </div>

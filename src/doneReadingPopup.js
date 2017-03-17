@@ -99,7 +99,7 @@ const DoneReading = React.createClass({
     return (
         <Link onClick={this.open}>
           <div className="donereading-container">
-          <button className="btn btn-lg donepopup"> I'm Done Reading </button>
+          <button className="btn btn-lg donepopup"> <b>I'm Done Reading </b> </button>
         <Modal
           aria-labelledby='modal-label'
           style={modalStyle}
