@@ -97,7 +97,6 @@ const PromotePopup = React.createClass({
         <Link onClick={this.open}>
           <div className="promote-button">
             <button className="btn donepopup"> <b>Promote Article </b></button>
-            <p className="article-promotion-points"> {this.props.points} pts</p>
             <Modal
               aria-labelledby='modal-label'
               style={modalStyle}

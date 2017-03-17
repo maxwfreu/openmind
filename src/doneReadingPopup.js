@@ -85,8 +85,11 @@ const DoneReading = React.createClass({
   },
 
   close_modal(){
+    document.getElementById("contribute-desc").style.display = "inline-block";
     document.getElementById("promote-button").style.display = "inline-block";
     document.getElementById("earn-content").style.display = "none";
+    document.getElementById("read-desc").style.display = "none";
+
     this.setState({ showModal: false });
   },
 

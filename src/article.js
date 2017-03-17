@@ -34,20 +34,6 @@ var allArticles = [{title: "Why those in media bubble never got Trump's rise –
 var articleKey;
 var article;
 
-function sticky_relocate() {
-    var window_top = $(window).scrollTop();
-    var div_top = $('#sticky-anchor').offset().top - 26;
-    if (window_top > div_top)
-        $('#sticky-element').addClass('sticky');
-    else
-        $('#sticky-element').removeClass('sticky');
-}
-
-$(function() {
-    $(window).scroll(sticky_relocate);
-    sticky_relocate();
-});
-
 function getArticleInfo() {
   for(var i =0; i < allArticles.length; i ++){
     if(allArticles[i]['uniqueKey'] === articleKey){
@@ -186,10 +172,6 @@ const MainArticle = React.createClass({
         <h2> {article.title} </h2>
         <div className="social-media-container">
           <h5 className="social-media"> By SCOTT SHANE, MATTHEW ROSENBERG and ANDREW W. LEHREN &middot; MARCH 7, 2017 </h5>
-            <i className="fa fa-share social-media icon" aria-hidden="true"></i>
-              <i className="fa fa-envelope social-media icon" aria-hidden="true"></i>
-            <i className="fa fa-twitter-square social-media icon" aria-hidden="true"></i>
-            <i className="fa fa-facebook-square social-media icon" aria-hidden="true"></i>
       </div>
         <img src={require(article.url)} alt="trump" style={{width: 100 + '%'}}/>
         <p className="article-caption">{article.blurb}</p>
@@ -209,8 +191,7 @@ const PageView = React.createClass({
       </div>
       <div className="col-md-4">
         <div className="container-fluid">
-          <div id="sticky-anchor"></div>
-          <div id="sticky-element" className="articleList">
+          <div className="articleList">
             <SideInfo canEarn={article.canEarn} points={article.points} totalPoints={article.totalPoints}/>
             <SimilarArticles/>
             <hr className="article-separator"/>
