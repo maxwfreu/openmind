@@ -49,24 +49,16 @@ export const SideInfo = React.createClass({
         <div id="promote-button-place">{showReadButtion(this.props.canEarn)}</div>
           <div className="row">
           <div className="contributedBy">
-            <div className="circles">
-              <img className="img-circle" src={require('./images/max.jpg')} alt="max"/>
-              <img className="img-circle img-next" src={require('./images/natasha.jpg')} alt="natasha"/>
-              <img className="img-circle img-next" src={require('./images/pippa.jpg')} alt="pippa"/>
-            </div>
-                        <h4>+ {(Math.floor(Math.random() * (40000 - 10000) + 10000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} have promoted</h4>
+            <p><b>Natasha Berk, Fillippa Karrefelt + {(Math.floor(Math.random() * (40000 - 10000) + 10000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</b> others promoted </p>
           </div>
         </div>
         <div className="row">
           <div className="readBy">
-            <div className="circles">
-              <img className="img-circle" src={require('./images/pippa.jpg')} alt="pippa"/>
-              <img className="img-circle img-next" src={require('./images/natasha.jpg')}  alt="natasha"/>
-              <img className="img-circle img-next" src={require('./images/max.jpg')} alt="max"/>
-            </div>
-                        <h4>+  {(Math.floor(Math.random() * (100000 - 50000) + 50000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} have read</h4>
+            <p><b>Max Freundlich, Peter Wood + {(Math.floor(Math.random() * (100000 - 50000) + 50000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} </b>have read</p>
           </div>
         </div>
+        <p className="contribute-details">Contribute points to this article to promote it and increase its ranking in the news feeds of those who haven't been exposed to this perspective</p>
+
       </div>
     )
   }

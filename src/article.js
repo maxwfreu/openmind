@@ -188,7 +188,6 @@ const MainArticle = React.createClass({
           <h5 className="social-media"> By SCOTT SHANE, MATTHEW ROSENBERG and ANDREW W. LEHREN &middot; MARCH 7, 2017 </h5>
             <i className="fa fa-share social-media icon" aria-hidden="true"></i>
               <i className="fa fa-envelope social-media icon" aria-hidden="true"></i>
-
             <i className="fa fa-twitter-square social-media icon" aria-hidden="true"></i>
             <i className="fa fa-facebook-square social-media icon" aria-hidden="true"></i>
       </div>
