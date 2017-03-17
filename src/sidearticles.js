@@ -49,7 +49,7 @@ export const SideInfo = React.createClass({
         <div id="promote-button-place">{showReadButtion(this.props.canEarn)}</div>
           <div className="row">
           <div className="contributedBy">
-            <p><b>Natasha Berk, Fillippa Karrefelt + {(Math.floor(Math.random() * (40000 - 10000) + 10000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</b> others promoted </p>
+            <p><b>Natasha Berk, Fillippa Karrfelt + {(Math.floor(Math.random() * (40000 - 10000) + 10000)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</b> others promoted </p>
           </div>
         </div>
         <div className="row">

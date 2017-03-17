@@ -41,12 +41,12 @@ const NewsCard = React.createClass({
       <Link to={pathName}>
         <div className="thumbnail">
           <img src={require(this.props.url)} alt="trump"/>
+          <button className="btn btn-md overlayButton">Read <b>+{this.props.points}</b></button>
           <div className="caption">
             <h5> {this.props.title} </h5>
             <p className="blurb"> {this.props.blurb} </p>
             <div className="thumbnail-info">
               <div>
-                <div className="thumbnail-readicon"> Read <b>+{this.props.points} pts</b> </div>
                 <div className="thumbnail-credits read"> <b> {this.props.totalPoints} pts</b></div>
               </div>
             </div>
@@ -71,13 +71,13 @@ const NewsCardBig = React.createClass({
         <div className="thumbnail">
           <div className="imgContainer">
             <img src={require(this.props.url)} alt="trump" className="imgCard"/>
+            <button className="btn btn-md overlayButton">Read <b>+{this.props.points}</b></button>
           </div>
           <div className="caption">
             <h4> {this.props.title} </h4>
             <p className="blurb big"> {this.props.blurb} </p>
             <div className="thumbnail-info big">
               <div>
-                <div className="thumbnail-readicon"> Earn <b>+{this.props.points} pts</b> </div>
                 <div className="thumbnail-credits read"><b>{this.props.totalPoints} pts</b></div>
               </div>
             </div>
