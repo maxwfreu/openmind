@@ -69,7 +69,7 @@ export const SideInfo = React.createClass({
     return (
       <div className="infoBox">
         <div className="progress">
-          <div className="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{width: 70+'%'}}>
+          <div className="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{width: this.props.percent+'%'}}>
               <span className="sr-only">60% Complete</span>
           </div>
         </div>
