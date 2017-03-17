@@ -46,6 +46,11 @@ const NewsCard = React.createClass({
             <h5> {this.props.title} </h5>
             <p className="blurb"> {this.props.blurb} </p>
             <div className="thumbnail-info">
+              <div className="progress in-card small">
+                <div className="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{width: 70+'%'}}>
+                    <span className="sr-only">60% Complete</span>
+                </div>
+              </div>
               <div>
                 <div className="thumbnail-credits read"> <b> {this.props.totalPoints} pts</b></div>
               </div>
@@ -77,6 +82,11 @@ const NewsCardBig = React.createClass({
             <h4> {this.props.title} </h4>
             <p className="blurb big"> {this.props.blurb} </p>
             <div className="thumbnail-info big">
+              <div className="progress in-card">
+                <div className="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{width: 70+'%'}}>
+                    <span className="sr-only">60% Complete</span>
+                </div>
+              </div>
               <div>
                 <div className="thumbnail-credits read"><b>{this.props.totalPoints} pts</b></div>
               </div>

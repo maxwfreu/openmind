@@ -131,10 +131,10 @@ hr {
   height: .25rem;
   width: 50%;
   margin: 0;
-  background: -webkit-linear-gradient(-90deg, white, cyan, white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, white, cyan, white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, white, cyan, white); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, white, cyan, white); /* Standard syntax */  border: none;
+  background: -webkit-linear-gradient(-90deg, white, gold, white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, white, gold, white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, white, gold, white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, white, gold, white); /* Standard syntax */  border: none;
   transition: .3s ease-in-out;
 }
 
