@@ -218,3 +218,12 @@
   color: gray;
   margin-left: 5px;
 }
+
+.article-separator {
+  background-color: #eee;
+   border: 0 none;
+   color: #eee;
+   height: 2px;
+   width: 80%;
+   margin-left: 10%;
+}

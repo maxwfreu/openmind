@@ -213,7 +213,7 @@ const PageView = React.createClass({
           <div id="sticky-element" className="articleList">
             <SideInfo canEarn={article.canEarn} points={article.points} totalPoints={article.totalPoints}/>
             <SimilarArticles/>
-            <hr style={{height:3+'px'}}/>
+            <hr className="article-separator"/>
             <ConsiderReading/>
           </div>
         </div>
