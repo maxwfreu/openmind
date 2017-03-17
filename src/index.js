@@ -64,6 +64,7 @@ const MyNavBar = React.createClass({
             <ul className="nav navbar-nav navbar-right navbar-shift">
               <li><Link href="#"><i className="material-icons">search</i></Link></li>
               <li><Link href="#">About Us</Link></li>
+              <li><Link href="#">Add Article</Link></li>
               <li><Link href="#">My Account</Link></li>
               <li><Link href="#">
                 <div className="ovalParentOverlay">
