@@ -194,3 +194,15 @@
 .well {
   font-family: 'Roboto', sans-serif;
 }
+
+.social-media {
+  display: inline-block;
+}
+.social-media.icon{
+  float:right;
+  margin-top: 10px;
+}
+
+.social-media-container {
+  width: 100%;
+}

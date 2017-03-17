@@ -184,7 +184,14 @@ const MainArticle = React.createClass({
       <div className="mainArticle-text">
         <div className="article-title-info">
         <h2> {article.title} </h2>
-        <h5> By SCOTT SHANE, MATTHEW ROSENBERG and ANDREW W. LEHREN &middot; MARCH 7, 2017 </h5>
+        <div className="social-media-container">
+          <h5 className="social-media"> By SCOTT SHANE, MATTHEW ROSENBERG and ANDREW W. LEHREN &middot; MARCH 7, 2017 </h5>
+            <i className="fa fa-share social-media icon" aria-hidden="true"></i>
+              <i className="fa fa-envelope social-media icon" aria-hidden="true"></i>
+
+            <i className="fa fa-twitter-square social-media icon" aria-hidden="true"></i>
+            <i className="fa fa-facebook-square social-media icon" aria-hidden="true"></i>
+      </div>
         <img src={require(article.url)} alt="trump" style={{width: 100 + '%'}}/>
         <p className="article-caption">{article.blurb}</p>
         </div>
