@@ -22,12 +22,12 @@ function showReadButtion(canearn){
     return(
       <div>
         <div id="promote-button" style={{display: "none"}}>
-          <PromotePopup points={totalPoints}/>
+          <PromotePopup points={totalPoints} userpoints={points}/>
         </div>
       </div>
   )
 } else return (
-  <PromotePopup points={totalPoints}/>
+  <PromotePopup points={totalPoints} userpoints={points}/>
 );
 }
 
@@ -64,7 +64,7 @@ function generateReadButton(canEarn, points){
 
 export const SideInfo = React.createClass({
   render () {
-    points = this.props.points;
+    points = this.props.pointNum;
     totalPoints = this.props.totalPoints;
     return (
       <div className="infoBox">
@@ -74,14 +74,14 @@ export const SideInfo = React.createClass({
           </div>
         </div>
         <div className="numTotalPoints">
-            <p><b>{totalPoints} pts</b></p>
+            <p><b id="total-points">{totalPoints} pts</b></p>
         </div>
         <div className="row">
           <div className="read-content">
-            <h4>5.5k</h4>
+            <h4>{ Math.round( (Math.random() * (10 - 5) + 5) * 10 ) / 10} k</h4>
             <p><b>promoted</b> including </p>
             <p style={{paddingBottom: 5 +'px'}}>Natasha Berk & Fillippa Karrfelt</p>
-            <h4>3.7k</h4>
+            <h4>{  Math.round( (Math.random() * (5 - 2) + 2) * 10 ) / 10} k</h4>
             <p><b>read</b> including </p>
             <p>Max Freundlich & Peter Wood</p>
           </div>

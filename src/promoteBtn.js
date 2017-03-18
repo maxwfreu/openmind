@@ -9,7 +9,11 @@ require('rc-tooltip/assets/bootstrap.css');
 import Tooltip from 'rc-tooltip'
 import Slider from 'rc-slider'
 const Handle = Slider.Handle;
+var finalVal = 0;
 
+function setFinalVal(val){
+  finalVal = val;
+}
 const handle = (props) => {
   const { value, dragging, index, ...restProps } = props;
   return (
@@ -20,6 +24,7 @@ const handle = (props) => {
       visible={dragging}
       placement="top"
       key={index}
+      onClick={setFinalVal(value)}
     >
       <Handle {...restProps} />
     </Tooltip>
@@ -83,8 +88,9 @@ const PromotePopup = React.createClass({
     return { showModal: false };
   },
 
-  close_up(){
-    //this.setState({ showModal: false });
+  close(){
+    this.setState({ showModal: false });
+    console.log(finalVal);
   },
 
   open(){
@@ -117,6 +123,15 @@ const PromotePopup = React.createClass({
 
   close(){
     this.setState({ showModal: false });
+    console.log(this.props.points);
+    console.log(this.props.userpoints);
+    var temp = finalVal;
+    finalVal += this.props.userpoints;
+    var y = finalVal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    document.getElementById('my-total').innerHTML = 100 - temp;
+    document.getElementById('total-points').innerHTML = y + " pts"
+    console.log(finalVal);
+
   },
 
   open(){

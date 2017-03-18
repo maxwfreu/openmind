@@ -69,7 +69,7 @@ const MyNavBar = React.createClass({
               <li><Link href="#">
                 <div className="ovalParentOverlay">
                   <div className="ovalOverlay">
-                    <div className="moneyInOval"> 100 </div>
+                    <div id="my-total" className="moneyInOval"> 100 </div>
                   </div>
                 </div>
               </Link></li>
